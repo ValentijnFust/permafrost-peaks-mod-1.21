@@ -2,6 +2,7 @@ package net.mod.permafrostpeaks;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.mod.permafrostpeaks.block.ModBlocks;
 import net.mod.permafrostpeaks.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,5 +14,6 @@ public class PermaFrostPeaks implements ModInitializer {
 	@Override
 	public void onInitialize() {
         ModItems.registerModItems();
+        ModBlocks.registerModBlocks();
 	}
 }
