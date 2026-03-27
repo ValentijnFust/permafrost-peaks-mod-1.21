@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "permafrostpeaks:item/antonio_liberto"
+  }
+}
