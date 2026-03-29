@@ -13,6 +13,12 @@ import net.minecraft.util.Identifier;
 import net.mod.permafrostpeaks.PermaFrostPeaks;
 
 public class ModBlocks {
+// HOW TO USE
+// Copy the function below and fill in the spaces between brackets []
+// public static final Block [BLOCK_NAME_CAPITALIZED] = registerBlock("[block_name_lowercased]",
+//            new Block(AbstractBlock.Settings.create() [.settings(of block)] ));
+// see the file: [block of net.minecraft.block] for more information
+
 
     public static final Block PINK_GARNET_BLOCK = registerBlock("pink_garnet_block",
             new Block(AbstractBlock.Settings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK )));
