@@ -45,6 +45,6 @@ public class ModBlocks {
                 });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COLORED_BLOCKS).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(ModBlocks.ANTONIO_LIBERTO_BLOCK);
-        });
+                });
     }
 }
