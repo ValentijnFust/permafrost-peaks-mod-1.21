@@ -24,7 +24,8 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK )));
     public static final Block ANTONIO_LIBERTO_BLOCK = registerBlock("antonio_liberto_block",
             new Block(AbstractBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.HONEY )));
-
+    public static final Block GROEN_KRISTAL_BLOCK = registerBlock("groen_kristal_block",
+            new Block(AbstractBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.HONEY )));
 
 
     private static Block registerBlock(String name, Block block) {
@@ -46,5 +47,8 @@ public class ModBlocks {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COLORED_BLOCKS).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(ModBlocks.ANTONIO_LIBERTO_BLOCK);
                 });
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(fabricItemGroupEntries -> {
+            fabricItemGroupEntries.add(ModBlocks.GROEN_KRISTAL_BLOCK);
+        });
     }
 }
