@@ -21,7 +21,11 @@ When all the files have been located place the following lines in each given fun
 
 -  An exapmle line would be:
 
-   public static final Item PINK_GARNET = registerItem("pink_garnet", new Item(new Item.Settings()));
+    PermaFrostPeaks.LOGGER.info("Registering Mod Items for " + PermaFrostPeaks.MOD_ID);
+
+    ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(fabricItemGroupEntries -> {
+        fabricItemGroupEntries.add(PINK_GARNET);
+    });
 
 **lang/en_us.json**
 -  Copy the following line of code and change it according to your prefrences:

@@ -19,8 +19,14 @@ public class ModItemGroups {
             FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.GOAT_FUR))
                     .displayName(Text.translatable("itemgroup.permafrostpeaks.permafrost_peaks"))
                     .entries((displayContext, entries) -> {
+
+
                         entries.add(ModItems.PINK_GARNET);
                         entries.add(ModItems.RED_GARNET);
+                        entries.add(ModItems.ANTONIO_LIBERTO);
+                        entries.add(ModItems.GOAT_FUR);
+
+
                     }).build());
 
 
