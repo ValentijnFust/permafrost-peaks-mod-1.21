@@ -14,10 +14,10 @@ import net.mod.permafrostpeaks.block.ModBlocks;
 import java.util.jar.Attributes;
 
 public class ModItemGroups {
-    public static final ItemGroup PERMAFROST_PEAKS_ITEMS = Registry.register(Registries.ITEM_GROUP,
-            Identifier.of(PermaFrostPeaks.MOD_ID, "permafrost_peaks_items"),
-            FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.ANTONIO_LIBERTO_BLOCK))
-                    .displayName(Text.translatable("itemgroup.permafrostpeaks.permafrost_peaks_items"))
+    public static final ItemGroup PERMAFROST_PEAKS = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(PermaFrostPeaks.MOD_ID, "permafrost_peaks"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.GOAT_FUR))
+                    .displayName(Text.translatable("itemgroup.permafrostpeaks.permafrost_peaks"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.PINK_GARNET);
                         entries.add(ModItems.RED_GARNET);

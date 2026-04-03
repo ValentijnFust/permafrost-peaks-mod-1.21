@@ -1,3 +1,4 @@
+
 {
   "item.permafrostpeaks.pink_garnet": "Pink Garnet",
   "item.permafrostpeaks.red_garnet": "Red Garnet",
@@ -7,6 +8,5 @@
   "block.permafrostpeaks.pink_garnet_block": "Pink Garnet Block",
   "block.permafrostpeaks.antonio_liberto_block": "Antonio Liberto Squared",
 
-  "itemgroup.permafrostpeaks.permafrost_peaks_items": "PermaFrost Peaks Items"
-
+  "itemgroup.permafrostpeaks.permafrost_peaks": "PermaFrost Peaks"
 }
