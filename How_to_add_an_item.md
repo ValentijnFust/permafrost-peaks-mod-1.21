@@ -1,5 +1,7 @@
 **ADDING AN ITEM**
 
+https://www.youtube.com/watch?v=9xflCDe-Ruw
+
 Make sure that the following files are present on your used build of the mod
 -   item/ModItems.java file
 -   lang/en_us.json
