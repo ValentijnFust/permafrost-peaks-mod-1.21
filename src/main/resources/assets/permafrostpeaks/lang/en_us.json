@@ -1,13 +1,16 @@
-
 {
+  "//": "Items",
   "item.permafrostpeaks.pink_garnet": "Pink Garnet",
   "item.permafrostpeaks.red_garnet": "Red Garnet",
   "item.permafrostpeaks.antonio_liberto": "Antonio Liberto",
   "item.permafrostpeaks.goat_fur": "Goat Fur",
 
+  "//": "Blocks",
   "block.permafrostpeaks.pink_garnet_block": "Pink Garnet Block",
   "block.permafrostpeaks.antonio_liberto_block": "Antonio Liberto Squared",
-  "block.permafrostpeaks.groen_kristal_block": "Green Cystal Block",
+  "block.permafrostpeaks.green_crystal_block": "Green Crystal Block",
+  "block.permafrostpeaks.testing_block": "Testing Block",
 
+  "//": "Item Groups",
   "itemgroup.permafrostpeaks.permafrost_peaks": "PermaFrost Peaks"
 }

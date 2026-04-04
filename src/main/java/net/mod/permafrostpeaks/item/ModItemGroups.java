@@ -10,8 +10,9 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.mod.permafrostpeaks.PermaFrostPeaks;
 import net.mod.permafrostpeaks.block.ModBlocks;
-
 import java.util.jar.Attributes;
+
+
 
 public class ModItemGroups {
     public static final ItemGroup PERMAFROST_PEAKS = Registry.register(Registries.ITEM_GROUP,
@@ -20,12 +21,17 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.permafrostpeaks.permafrost_peaks"))
                     .entries((displayContext, entries) -> {
 
-
+                        //Items
                         entries.add(ModItems.PINK_GARNET);
                         entries.add(ModItems.RED_GARNET);
                         entries.add(ModItems.ANTONIO_LIBERTO);
                         entries.add(ModItems.GOAT_FUR);
 
+                        //Blocks
+                        entries.add(ModBlocks.GREEN_CRYSTAL_BLOCK);
+                        entries.add(ModBlocks.PINK_GARNET_BLOCK);
+                        entries.add(ModBlocks.ANTONIO_LIBERTO_BLOCK);
+                        entries.add(ModBlocks.TESTING_BLOCK);
 
                     }).build());
 

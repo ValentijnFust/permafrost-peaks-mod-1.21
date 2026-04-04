@@ -3,6 +3,9 @@ package net.mod.permafrostpeaks.block;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.TransparentBlock;
+import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -13,19 +16,43 @@ import net.minecraft.util.Identifier;
 import net.mod.permafrostpeaks.PermaFrostPeaks;
 
 public class ModBlocks {
-// HOW TO USE
-// Copy the function below and fill in the spaces between brackets []
-// public static final Block [BLOCK_NAME_CAPITALIZED] = registerBlock("[block_name_lowercased]",
-//            new Block(AbstractBlock.Settings.create() [.settings(of block)] ));
-// see the file: [block of net.minecraft.block] for more information
 
-
+    //To see the registered block in the inventory go to the ModItemGroups.java file and add the corresponding code there
     public static final Block PINK_GARNET_BLOCK = registerBlock("pink_garnet_block",
-            new Block(AbstractBlock.Settings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK )));
+            new Block(AbstractBlock.Settings.create()
+                    .strength(4f)
+                    .requiresTool()
+                    .sounds(BlockSoundGroup.AMETHYST_BLOCK)
+            ));
+
     public static final Block ANTONIO_LIBERTO_BLOCK = registerBlock("antonio_liberto_block",
-            new Block(AbstractBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.HONEY )));
-    public static final Block GROEN_KRISTAL_BLOCK = registerBlock("groen_kristal_block",
-            new Block(AbstractBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.HONEY )));
+            new Block(AbstractBlock.Settings.create()
+                    .strength(3f)
+                    .requiresTool()
+                    .sounds(BlockSoundGroup.HONEY)
+            ));
+
+    public static final Block GREEN_CRYSTAL_BLOCK = registerBlock("green_crystal_block",
+            new Block(AbstractBlock.Settings.create()
+                    .strength(3f)
+                    .requiresTool()
+                    .sounds(BlockSoundGroup.GLASS)
+            ));
+
+    //If there's anything that needs testing use the block below for that
+    //There are also settings for this block in the PermaFrostPeaksClient.java file
+    public static final Block TESTING_BLOCK = registerBlock("testing_block",
+            new TransparentBlock(AbstractBlock.Settings.create()
+                            .instrument(NoteBlockInstrument.HAT)
+                            .strength(0.3F)
+                            .sounds(BlockSoundGroup.GLASS)
+                            .nonOpaque()
+                            .allowsSpawning(Blocks::never)
+                            .solidBlock(Blocks::never)
+                            .suffocates(Blocks::never)
+                            .blockVision(Blocks::never)
+            ));
+
 
 
     private static Block registerBlock(String name, Block block) {
@@ -39,16 +66,6 @@ public class ModBlocks {
     }
 
     public static void registerModBlocks() {
-        PermaFrostPeaks.LOGGER.info("Registering Mod Blocks for " + PermaFrostPeaks.MOD_ID);
-
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(fabricItemGroupEntries -> {
-            fabricItemGroupEntries.add(ModBlocks.PINK_GARNET_BLOCK);
-                });
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COLORED_BLOCKS).register(fabricItemGroupEntries -> {
-            fabricItemGroupEntries.add(ModBlocks.ANTONIO_LIBERTO_BLOCK);
-                });
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(fabricItemGroupEntries -> {
-            fabricItemGroupEntries.add(ModBlocks.GROEN_KRISTAL_BLOCK);
-        });
+        PermaFrostPeaks.LOGGER.info(PermaFrostPeaks.MOD_ID);
     }
 }
