@@ -33,24 +33,28 @@ public class ModBlocks {
             ));
 
     public static final Block GREEN_CRYSTAL_BLOCK = registerBlock("green_crystal_block",
-            new Block(AbstractBlock.Settings.create()
-                    .strength(3f)
-                    .requiresTool()
-                    .sounds(BlockSoundGroup.GLASS)
+            new TransparentBlock(AbstractBlock.Settings.create()
+                    .instrument(NoteBlockInstrument.HAT)
+                    .strength(0.3F)
+                    .sounds(BlockSoundGroup.HONEY)
+                    .nonOpaque()
+                    .solidBlock(Blocks::never)
+                    .blockVision(Blocks::never)
+                    .luminance(state -> 15)
             ));
 
     //If there's anything that needs testing use the block below for that
     //There are also settings for this block in the PermaFrostPeaksClient.java file
     public static final Block TESTING_BLOCK = registerBlock("testing_block",
             new TransparentBlock(AbstractBlock.Settings.create()
-                            .instrument(NoteBlockInstrument.HAT)
-                            .strength(0.3F)
-                            .sounds(BlockSoundGroup.GLASS)
-                            .nonOpaque()
-                            .allowsSpawning(Blocks::never)
-                            .solidBlock(Blocks::never)
-                            .suffocates(Blocks::never)
-                            .blockVision(Blocks::never)
+                    .instrument(NoteBlockInstrument.HAT)
+                    .strength(0.3F)
+                    .sounds(BlockSoundGroup.GLASS)
+                    .nonOpaque()
+                    .allowsSpawning(Blocks::never)
+                    .solidBlock(Blocks::never)
+                    .suffocates(Blocks::never)
+                    .blockVision(Blocks::never)
             ));
 
 
