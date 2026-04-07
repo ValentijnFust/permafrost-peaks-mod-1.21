@@ -38,8 +38,6 @@ public class ModBlocks {
                     .strength(0.3F)
                     .sounds(BlockSoundGroup.AMETHYST_BLOCK)
                     .nonOpaque()
-                    .solidBlock(Blocks::never)
-                    .blockVision(Blocks::never)
                     .luminance(state -> 15)
             ));
 
@@ -49,12 +47,8 @@ public class ModBlocks {
             new TransparentBlock(AbstractBlock.Settings.create()
                     .instrument(NoteBlockInstrument.HAT)
                     .strength(0.3F)
-                    .sounds(BlockSoundGroup.GLASS)
+                    .sounds(BlockSoundGroup.ANCIENT_DEBRIS)
                     .nonOpaque()
-                    .allowsSpawning(Blocks::never)
-                    .solidBlock(Blocks::never)
-                    .suffocates(Blocks::never)
-                    .blockVision(Blocks::never)
             ));
 
 
