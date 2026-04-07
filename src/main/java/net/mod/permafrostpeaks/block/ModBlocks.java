@@ -36,7 +36,7 @@ public class ModBlocks {
             new TransparentBlock(AbstractBlock.Settings.create()
                     .instrument(NoteBlockInstrument.HAT)
                     .strength(0.3F)
-                    .sounds(BlockSoundGroup.HONEY)
+                    .sounds(BlockSoundGroup.AMETHYST_BLOCK)
                     .nonOpaque()
                     .solidBlock(Blocks::never)
                     .blockVision(Blocks::never)
