@@ -28,6 +28,7 @@ public class ModItemGroups {
                         entries.add(ModItems.GOAT_FUR);
 
                         //Blocks
+                        entries.add(ModBlocks.BLUE_CRYSTAL_BLOCK);
                         entries.add(ModBlocks.GREEN_CRYSTAL_BLOCK);
                         entries.add(ModBlocks.PINK_GARNET_BLOCK);
                         entries.add(ModBlocks.ANTONIO_LIBERTO_BLOCK);
