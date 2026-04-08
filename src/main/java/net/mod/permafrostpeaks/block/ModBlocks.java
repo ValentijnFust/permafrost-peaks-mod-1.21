@@ -29,7 +29,8 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create()
                     .strength(3f)
                     .requiresTool()
-                    .sounds(BlockSoundGroup.HONEY)
+                    .sounds(BlockSoundGroup.SLIME)
+                    .slipperiness(8F)
             ));
 
     public static final Block GREEN_CRYSTAL_BLOCK = registerBlock("green_crystal_block",
