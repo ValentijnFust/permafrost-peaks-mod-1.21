@@ -29,6 +29,7 @@ public class ModItemGroups {
                         entries.add(ModItems.BLUE_CRYSTAL_SHARD);
                         entries.add(ModItems.RED_CRYSTAL_SHARD);
                         entries.add(ModItems.YELLOW_CRYSTAL_SHARD);
+                        entries.add(ModItems.GREEN_CRYSTAL_SHARD);
 
                         //Blocks
                         entries.add(ModBlocks.BLUE_CRYSTAL_BLOCK);
