@@ -4,6 +4,11 @@
   "item.permafrostpeaks.red_garnet": "Red Garnet",
   "item.permafrostpeaks.antonio_liberto": "Antonio Liberto",
   "item.permafrostpeaks.goat_fur": "Goat Fur",
+  "item.permafrostpeaks.blue_crystal_shard": "Blue Crystal Shard",
+  "item.permafrostpeaks.red_crystal_shard": "Red Crystal Shard",
+  "item.permafrostpeaks.yellow_crystal_shard": "Yellow Crystal Shard",
+  "item.permafrostpeaks.green_crystal_shard": "Green Crystal Shard",
+
 
   "//": "Blocks",
   "block.permafrostpeaks.pink_garnet_block": "Pink Garnet Block",

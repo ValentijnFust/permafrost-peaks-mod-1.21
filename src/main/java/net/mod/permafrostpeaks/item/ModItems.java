@@ -19,6 +19,14 @@ public class ModItems {
 
     public static final Item GOAT_FUR = registerItem("goat_fur", new Item(new Item.Settings()));
 
+    public static final Item BLUE_CRYSTAL_SHARD = registerItem("blue_crystal_shard", new Item(new Item.Settings()));
+
+    public static final Item RED_CRYSTAL_SHARD = registerItem("red_crystal_shard", new Item(new Item.Settings()));
+
+    public static final Item YELLOW_CRYSTAL_SHARD = registerItem("yellow_crystal_shard", new Item(new Item.Settings()));
+
+    public static final Item GREEN_CRYSTAL_SHARD = registerItem("green_crystal_shard", new Item(new Item.Settings()));
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(PermaFrostPeaks.MOD_ID, name), item);
     }
