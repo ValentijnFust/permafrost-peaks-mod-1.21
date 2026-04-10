@@ -50,6 +50,14 @@ public class ModBlocks {
                     .nonOpaque()
                     .luminance(state -> 7)
             ));
+    public static final Block RED_CRYSTAL_BLOCK = registerBlock("blue_crystal_block",
+            new TransparentBlock(AbstractBlock.Settings.create()
+                    .instrument(NoteBlockInstrument.HAT)
+                    .strength(7F)
+                    .sounds(BlockSoundGroup.AMETHYST_BLOCK)
+                    .nonOpaque()
+                    .luminance(state -> 7)
+            ));
 
     //If there's anything that needs testing use the block below for that
     //There are also settings for this block in the PermaFrostPeaksClient.java file

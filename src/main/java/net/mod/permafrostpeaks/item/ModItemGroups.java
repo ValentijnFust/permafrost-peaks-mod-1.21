@@ -33,6 +33,7 @@ public class ModItemGroups {
 
                         //Blocks
                         entries.add(ModBlocks.BLUE_CRYSTAL_BLOCK);
+                        entries.add(ModBlocks.RED_CRYSTAL_BLOCK);
                         entries.add(ModBlocks.GREEN_CRYSTAL_BLOCK);
                         entries.add(ModBlocks.PINK_GARNET_BLOCK);
                         entries.add(ModBlocks.ANTONIO_LIBERTO_BLOCK);

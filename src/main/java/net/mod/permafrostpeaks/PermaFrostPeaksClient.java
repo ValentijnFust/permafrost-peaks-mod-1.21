@@ -14,5 +14,7 @@ public class PermaFrostPeaksClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GREEN_CRYSTAL_BLOCK, RenderLayer.getTranslucent());
 
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BLUE_CRYSTAL_BLOCK, RenderLayer.getTranslucent());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.RED_CRYSTAL_BLOCK, RenderLayer.getTranslucent());
     }
 }
