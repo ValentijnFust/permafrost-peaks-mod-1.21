@@ -26,6 +26,7 @@ public class ModItemGroups {
                         entries.add(ModItems.RED_GARNET);
                         entries.add(ModItems.ANTONIO_LIBERTO);
                         entries.add(ModItems.GOAT_FUR);
+                        entries.add(ModItems.GREEN_CRYSTAL_SHARD);
 
                         //Blocks
                         entries.add(ModBlocks.BLUE_CRYSTAL_BLOCK);
