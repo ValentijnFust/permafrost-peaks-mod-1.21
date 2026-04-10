@@ -26,7 +26,7 @@
                   }
                 }
               ],
-              "name": "permafrostpeaks:green_crystal_shard"
+              "name": "permafrostpeaks:red_crystal_shard"
             },
             {
               "type": "minecraft:item",
@@ -59,7 +59,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "permafrostpeaks:green_crystal_shard"
+              "name": "permafrostpeaks:red_crystal_shard"
             }
           ]
         }
@@ -67,5 +67,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "permafrostpeaks:block/green_crystal_block"
+  "random_sequence": "permafrostpeaks:block/red_crystal_block"
 }
