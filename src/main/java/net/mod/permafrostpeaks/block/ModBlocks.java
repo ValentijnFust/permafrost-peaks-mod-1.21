@@ -20,14 +20,14 @@ public class ModBlocks {
     //To see the registered block in the inventory go to the ModItemGroups.java file and add the corresponding code there
     public static final Block PINK_GARNET_BLOCK = registerBlock("pink_garnet_block",
             new Block(AbstractBlock.Settings.create()
-                    .strength(4f)
+                    .strength(4F)
                     .requiresTool()
                     .sounds(BlockSoundGroup.AMETHYST_BLOCK)
             ));
 
     public static final Block ANTONIO_LIBERTO_BLOCK = registerBlock("antonio_liberto_block",
             new Block(AbstractBlock.Settings.create()
-                    .strength(3f)
+                    .strength(3F)
                     .requiresTool()
                     .sounds(BlockSoundGroup.SLIME)
                     .slipperiness(8F)
@@ -50,7 +50,16 @@ public class ModBlocks {
                     .nonOpaque()
                     .luminance(state -> 7)
             ));
-    public static final Block RED_CRYSTAL_BLOCK = registerBlock("blue_crystal_block",
+    public static final Block RED_CRYSTAL_BLOCK = registerBlock("red_crystal_block",
+            new TransparentBlock(AbstractBlock.Settings.create()
+                    .instrument(NoteBlockInstrument.HAT)
+                    .strength(7F)
+                    .sounds(BlockSoundGroup.AMETHYST_BLOCK)
+                    .nonOpaque()
+                    .luminance(state -> 7)
+            ));
+
+    public static final Block Yellow_CRYSTAL_BLOCK = registerBlock("yellow_crystal_block",
             new TransparentBlock(AbstractBlock.Settings.create()
                     .instrument(NoteBlockInstrument.HAT)
                     .strength(7F)

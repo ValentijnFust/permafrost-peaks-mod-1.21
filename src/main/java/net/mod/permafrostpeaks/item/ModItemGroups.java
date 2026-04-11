@@ -22,19 +22,24 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
 
                         //Items
-                        entries.add(ModItems.PINK_GARNET);
-                        entries.add(ModItems.RED_GARNET);
-                        entries.add(ModItems.ANTONIO_LIBERTO);
                         entries.add(ModItems.GOAT_FUR);
                         entries.add(ModItems.BLUE_CRYSTAL_SHARD);
                         entries.add(ModItems.RED_CRYSTAL_SHARD);
-                        entries.add(ModItems.YELLOW_CRYSTAL_SHARD);
                         entries.add(ModItems.GREEN_CRYSTAL_SHARD);
+                        entries.add(ModItems.YELLOW_CRYSTAL_SHARD);
 
                         //Blocks
                         entries.add(ModBlocks.BLUE_CRYSTAL_BLOCK);
                         entries.add(ModBlocks.RED_CRYSTAL_BLOCK);
                         entries.add(ModBlocks.GREEN_CRYSTAL_BLOCK);
+                        entries.add(ModBlocks.Yellow_CRYSTAL_BLOCK);
+
+                        //Testing Items
+                        entries.add(ModItems.PINK_GARNET);
+                        entries.add(ModItems.RED_GARNET);
+                        entries.add(ModItems.ANTONIO_LIBERTO);
+
+                        //Testing Blocks
                         entries.add(ModBlocks.PINK_GARNET_BLOCK);
                         entries.add(ModBlocks.ANTONIO_LIBERTO_BLOCK);
                         entries.add(ModBlocks.TESTING_BLOCK);

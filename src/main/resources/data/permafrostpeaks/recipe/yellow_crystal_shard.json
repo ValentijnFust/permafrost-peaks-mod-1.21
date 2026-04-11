@@ -3,11 +3,11 @@
   "category": "building",
   "ingredients": [
     {
-      "item": "permafrostpeaks:pink_garnet_block"
+      "item": "permafrostpeaks:yellow_crystal_block"
     }
   ],
   "result": {
     "count": 9,
-    "id": "permafrostpeaks:pink_garnet"
+    "id": "permafrostpeaks:yellow_crystal_shard"
   }
 }
