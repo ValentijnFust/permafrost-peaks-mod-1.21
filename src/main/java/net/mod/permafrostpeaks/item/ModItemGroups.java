@@ -44,6 +44,12 @@ public class ModItemGroups {
                         entries.add(ModBlocks.ANTONIO_LIBERTO_BLOCK);
                         entries.add(ModBlocks.TESTING_BLOCK);
 
+                        //Armor
+//                        entries.add(ModItems.PINK_GARNET_HELMET);
+//                        entries.add(ModItems.PINK_GARNET_CHESTPLATE);
+//                        entries.add(ModItems.PINK_GARNET_LEGGINGS);
+//                        entries.add(ModItems.PINK_GARNET_BOOTS);
+
                     }).build());
 
 

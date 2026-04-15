@@ -59,7 +59,7 @@ public class ModBlocks {
                     .luminance(state -> 7)
             ));
 
-    public static final Block Yellow_CRYSTAL_BLOCK = registerBlock("yellow_crystal_block",
+    public static final Block YELLOW_CRYSTAL_BLOCK = registerBlock("yellow_crystal_block",
             new TransparentBlock(AbstractBlock.Settings.create()
                     .instrument(NoteBlockInstrument.HAT)
                     .strength(7F)
