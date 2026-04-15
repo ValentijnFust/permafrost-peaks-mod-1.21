@@ -1,10 +1,7 @@
 package net.mod.permafrostpeaks.block;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.TransparentBlock;
+import net.minecraft.block.*;
 import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -23,6 +20,7 @@ public class ModBlocks {
                     .strength(4F)
                     .requiresTool()
                     .sounds(BlockSoundGroup.AMETHYST_BLOCK)
+                    .mapColor(MapColor.DARK_RED)
             ));
 
     public static final Block ANTONIO_LIBERTO_BLOCK = registerBlock("antonio_liberto_block",
@@ -31,24 +29,27 @@ public class ModBlocks {
                     .requiresTool()
                     .sounds(BlockSoundGroup.SLIME)
                     .slipperiness(8F)
+                    .mapColor(MapColor.DARK_DULL_PINK)
             ));
 
     public static final Block GREEN_CRYSTAL_BLOCK = registerBlock("green_crystal_block",
             new TransparentBlock(AbstractBlock.Settings.create()
                     .instrument(NoteBlockInstrument.HAT)
-                    .strength(0.3F)
+                    .strength(2.1F)
                     .sounds(BlockSoundGroup.AMETHYST_BLOCK)
                     .nonOpaque()
-                    .luminance(state -> 15)
+                    .luminance(state -> 11)
+                    .mapColor(MapColor.PALE_GREEN)
             ));
 
     public static final Block BLUE_CRYSTAL_BLOCK = registerBlock("blue_crystal_block",
             new TransparentBlock(AbstractBlock.Settings.create()
                     .instrument(NoteBlockInstrument.HAT)
-                    .strength(3F)
+                    .strength(2.8F)
                     .sounds(BlockSoundGroup.AMETHYST_BLOCK)
                     .nonOpaque()
                     .luminance(state -> 7)
+                    .mapColor(MapColor.BLUE)
             ));
     public static final Block RED_CRYSTAL_BLOCK = registerBlock("red_crystal_block",
             new TransparentBlock(AbstractBlock.Settings.create()
@@ -57,15 +58,17 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.AMETHYST_BLOCK)
                     .nonOpaque()
                     .luminance(state -> 7)
+                    .mapColor(MapColor.DARK_RED)
             ));
 
     public static final Block YELLOW_CRYSTAL_BLOCK = registerBlock("yellow_crystal_block",
             new TransparentBlock(AbstractBlock.Settings.create()
                     .instrument(NoteBlockInstrument.HAT)
-                    .strength(7F)
+                    .strength(4F)
                     .sounds(BlockSoundGroup.AMETHYST_BLOCK)
                     .nonOpaque()
                     .luminance(state -> 7)
+                    .mapColor(MapColor.PALE_YELLOW)
             ));
 
     //If there's anything that needs testing use the block below for that
