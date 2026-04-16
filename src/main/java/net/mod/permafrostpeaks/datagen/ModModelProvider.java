@@ -20,6 +20,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.YELLOW_CRYSTAL_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLUE_CRYSTAL_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RED_CRYSTAL_BLOCK);
+
         //Testing Blocks
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PINK_GARNET_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TESTING_BLOCK);
@@ -34,6 +35,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.BLUE_CRYSTAL_SHARD, Models.GENERATED);
         itemModelGenerator.register(ModItems.RED_CRYSTAL_SHARD, Models.GENERATED);
         itemModelGenerator.register(ModItems.GOAT_FUR, Models.GENERATED);
+
         //Test Items
         itemModelGenerator.register(ModItems.ANTONIO_LIBERTO, Models.GENERATED);
         itemModelGenerator.register(ModItems.PINK_GARNET, Models.GENERATED);

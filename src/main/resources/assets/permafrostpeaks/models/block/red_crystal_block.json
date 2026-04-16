@@ -1,9 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "permafrostpeaks:block/red_crystal_block",
-    "particle": "permafrostpeaks:block/red_crystal_block"
-  }
-}
-
-

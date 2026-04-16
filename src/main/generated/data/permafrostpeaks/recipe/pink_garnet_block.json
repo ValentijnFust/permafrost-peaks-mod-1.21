@@ -7,12 +7,12 @@
     }
   },
   "pattern": [
-    " # ",
-    "# #",
-    " # "
+    "###",
+    "###",
+    "###"
   ],
   "result": {
-    "count": 1,
+    "count": 9,
     "id": "permafrostpeaks:pink_garnet_block"
   }
 }
