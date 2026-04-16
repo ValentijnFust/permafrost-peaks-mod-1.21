@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "permafrostpeaks:block/yellow_crystal_block"
+  }
+}

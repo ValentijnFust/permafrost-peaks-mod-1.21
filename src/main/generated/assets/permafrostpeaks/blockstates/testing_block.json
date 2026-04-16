@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "permafrostpeaks:block/testing_block"
+    }
+  }
+}

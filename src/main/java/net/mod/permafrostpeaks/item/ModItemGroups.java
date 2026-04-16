@@ -32,7 +32,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.BLUE_CRYSTAL_BLOCK);
                         entries.add(ModBlocks.RED_CRYSTAL_BLOCK);
                         entries.add(ModBlocks.GREEN_CRYSTAL_BLOCK);
-                        entries.add(ModBlocks.Yellow_CRYSTAL_BLOCK);
+                        entries.add(ModBlocks.YELLOW_CRYSTAL_BLOCK);
 
                         //Testing Items
                         entries.add(ModItems.PINK_GARNET);
