@@ -1,4 +1,4 @@
-// 1.21	2026-04-16T16:38:55.5665566	PermaFrost Peaks/Model Definitions
+// 1.21	2026-04-16T17:22:28.7761786	PermaFrost Peaks/Model Definitions
 befa4fd990a3f3252e2c9c2a36d8c6f231079c26 assets\permafrostpeaks\models\item\red_garnet.json
 532e6858fe784938ccab7315679098d98d4b9d93 assets\permafrostpeaks\models\item\pink_garnet_block.json
 b5aff45dd02ce1417754a230dfe1facfadac45b4 assets\permafrostpeaks\models\block\antonio_liberto_block.json
@@ -11,8 +11,8 @@ da259d88f591a2565cdccbebeda1aca5bf6e14b5 assets\permafrostpeaks\models\item\gree
 48cea310c1fba72cf0fdd0969a72d814ba3117e4 assets\permafrostpeaks\models\item\goat_fur.json
 2118580c0dc78b89c14fa411277047d97f2fd5a9 assets\permafrostpeaks\blockstates\pink_garnet_block.json
 c213d67809bd2775d33b67d87adfd01ae263e47e assets\permafrostpeaks\models\block\green_crystal_block.json
-4a3942b3669f4fbb5da02ad48a5282639d3be893 assets\permafrostpeaks\blockstates\green_crystal_block.json
 4acf9b593bf710b61f7d9b7609e75bb30fcf588a assets\permafrostpeaks\models\block\yellow_crystal_block.json
+4a3942b3669f4fbb5da02ad48a5282639d3be893 assets\permafrostpeaks\blockstates\green_crystal_block.json
 11993a9e0937a008abe4a9e9533c832447d57eb2 assets\permafrostpeaks\blockstates\red_crystal_block.json
 5cd63ae0e5f274767473ce322ce08fa640115190 assets\permafrostpeaks\models\item\yellow_crystal_shard.json
 eeb2755ddc3833561bb1d99531ed10be2028b854 assets\permafrostpeaks\models\item\red_crystal_block.json
