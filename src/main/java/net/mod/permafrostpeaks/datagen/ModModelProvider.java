@@ -7,6 +7,9 @@ import net.mod.permafrostpeaks.item.ModItems;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
+import net.minecraft.data.client.*;
+import net.minecraft.item.ArmorItem;
+import net.minecraft.util.Identifier;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -40,5 +43,11 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.ANTONIO_LIBERTO, Models.GENERATED);
         itemModelGenerator.register(ModItems.PINK_GARNET, Models.GENERATED);
         itemModelGenerator.register(ModItems.RED_GARNET, Models.GENERATED);
+
+        //Armor
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.PINK_GARNET_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.PINK_GARNET_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.PINK_GARNET_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.PINK_GARNET_BOOTS));
     }
 }

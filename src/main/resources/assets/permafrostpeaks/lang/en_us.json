@@ -23,8 +23,8 @@
   "itemgroup.permafrostpeaks.permafrost_peaks": "PermaFrost Peaks",
 
   "//": "Armor",
-  "item.tutorialmod.pink_garnet_helmet": "Pink Garnet Helmet",
-  "item.tutorialmod.pink_garnet_chestplate": "Pink Garnet Chestplate",
-  "item.tutorialmod.pink_garnet_leggings": "Pink Garnet Leggings",
-  "item.tutorialmod.pink_garnet_boots": "Pink Garnet Boots"
+  "item.permafrostpeaks.pink_garnet_helmet": "Pink Garnet Helmet",
+  "item.permafrostpeaks.pink_garnet_chestplate": "Pink Garnet Chestplate",
+  "item.permafrostpeaks.pink_garnet_leggings": "Pink Garnet Leggings",
+  "item.permafrostpeaks.pink_garnet_boots": "Pink Garnet Boots"
 }
