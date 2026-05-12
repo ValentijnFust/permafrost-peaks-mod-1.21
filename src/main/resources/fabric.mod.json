@@ -23,7 +23,10 @@
 		],
         "client": [
             "net.mod.permafrostpeaks.PermaFrostPeaksClient"
-        ]
+        ],
+      "terrablender": [
+        "net.mod.permafrostpeaks.world.biome.ModTerrablenderAPI"
+      ]
 	},
 	"mixins": [
 		"permafrostpeaks.mixins.json"
