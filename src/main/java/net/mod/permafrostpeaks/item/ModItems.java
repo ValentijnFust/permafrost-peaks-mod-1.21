@@ -8,10 +8,12 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.mod.permafrostpeaks.PermaFrostPeaks;
 import net.minecraft.item.*;
+import net.mod.permafrostpeaks.entity.ModEntities;
 
 public class ModItems {
 
-    //To see the registered item in the inventory go to the ModItemGroups.java file and add the corresponding code there
+//Item Registering
+//To see the registered item in the inventory go to the ModItemGroups.java file and add the corresponding code there
     public static final Item PINK_GARNET = registerItem("pink_garnet", new Item(new Item.Settings()));
 
     public static final Item RED_GARNET = registerItem("red_garnet", new Item(new Item.Settings()));
@@ -28,7 +30,7 @@ public class ModItems {
 
     public static final Item GREEN_CRYSTAL_SHARD = registerItem("green_crystal_shard", new Item(new Item.Settings()));
 
-
+//Armor registering
     public static final Item PINK_GARNET_HELMET = registerItem("pink_garnet_helmet",
             new ArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
                     .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(15))));
@@ -45,23 +47,13 @@ public class ModItems {
             new ArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
                     .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(15))));
 
+    public static final Item MANTIS_SPAWN_EGG = registerItem("mantis_spawn_egg",
+            new SpawnEggItem(ModEntities.MANTIS, 0x9dc783, 0xbfaf5f, new Item.Settings()));
 
+//
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(PermaFrostPeaks.MOD_ID, name), item);
     }
-
-//    public static final Item PINK_GARNET_HELMET = registerItem("pink_garnet_helmet",
-//           new ArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
-//                    .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(15))));
-//    public static final Item PINK_GARNET_CHESTPLATE = registerItem("pink_garnet_chestplate",
-//            new ArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings()
-//                    .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(15))));
-//    public static final Item PINK_GARNET_LEGGINGS = registerItem("pink_garnet_leggings",
-//            new ArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings()
-//                    .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(15))));
-//    public static final Item PINK_GARNET_BOOTS = registerItem("pink_garnet_boots",
-//            new ArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
-//                    .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(15))));
 
     public static void registerModItems() {
         PermaFrostPeaks.LOGGER.info("Registering Mod Items for " + PermaFrostPeaks.MOD_ID);

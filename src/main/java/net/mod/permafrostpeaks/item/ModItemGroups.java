@@ -28,6 +28,9 @@ public class ModItemGroups {
                         entries.add(ModItems.GREEN_CRYSTAL_SHARD);
                         entries.add(ModItems.YELLOW_CRYSTAL_SHARD);
 
+                        //Spawn Eggs
+                        entries.add(ModItems.MANTIS_SPAWN_EGG);
+
                         //Blocks
                         entries.add(ModBlocks.BLUE_CRYSTAL_BLOCK);
                         entries.add(ModBlocks.RED_CRYSTAL_BLOCK);

@@ -2,7 +2,10 @@ package net.mod.permafrostpeaks;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.mod.permafrostpeaks.block.ModBlocks;
+import net.mod.permafrostpeaks.entity.ModEntities;
+import net.mod.permafrostpeaks.entity.custom.MantisEntity;
 import net.mod.permafrostpeaks.item.ModItemGroups;
 import net.mod.permafrostpeaks.item.ModItems;
 
@@ -23,5 +26,9 @@ public class PermaFrostPeaks implements ModInitializer {
 
         //World Gen Related
 
+
+        //Entities Related
+        ModEntities.registerModEntities();
+        FabricDefaultAttributeRegistry.register(ModEntities.MANTIS, MantisEntity.createAttributes());
 	}
 }
