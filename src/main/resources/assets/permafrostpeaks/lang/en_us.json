@@ -30,5 +30,15 @@
   "item.permafrostpeaks.pink_garnet_boots": "Pink Garnet Boots",
 
   "//": "Entities",
-  "entity.permafrostpeaks.mantis": "Mantis"
+  "entity.permafrostpeaks.mantis": "Mantis",
+
+  "//": "Trees",
+  "block.permafrostpeaks.driftwood_log": "Driftwood Log",
+  "block.permafrostpeaks.driftwood_wood": "Driftwood Wood",
+  "block.permafrostpeaks.stripped_driftwood_log": "Stripped Driftwood Log",
+  "block.permafrostpeaks.stripped_driftwood_wood": "Stripped Driftwood Wood",
+  "block.permafrostpeaks.driftwood_planks": "Driftwood Planks",
+  "block.permafrostpeaks.driftwood_leaves": "Driftwood Leaves",
+  "block.permafrostpeaks.driftwood_sapling": "Driftwood Sapling",
+  "item.permafrostpeaks.driftwood_sapling": "Driftwood Sapling"
 }
