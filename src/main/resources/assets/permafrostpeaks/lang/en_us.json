@@ -26,5 +26,15 @@
   "item.permafrostpeaks.pink_garnet_helmet": "Pink Garnet Helmet",
   "item.permafrostpeaks.pink_garnet_chestplate": "Pink Garnet Chestplate",
   "item.permafrostpeaks.pink_garnet_leggings": "Pink Garnet Leggings",
-  "item.permafrostpeaks.pink_garnet_boots": "Pink Garnet Boots"
+  "item.permafrostpeaks.pink_garnet_boots": "Pink Garnet Boots",
+
+  "//": "Trees",
+  "block.permafrostpeaks.driftwood_log": "Driftwood Log",
+  "block.permafrostpeaks.driftwood_wood": "Driftwood Wood",
+  "block.permafrostpeaks.stripped_driftwood_log": "Stripped Driftwood Log",
+  "block.permafrostpeaks.stripped_driftwood_wood": "Stripped Driftwood Wood",
+  "block.permafrostpeaks.driftwood_planks": "Driftwood Planks",
+  "block.permafrostpeaks.driftwood_leaves": "Driftwood Leaves",
+  "block.permafrostpeaks.driftwood_sapling": "Driftwood Sapling",
+  "item.permafrostpeaks.driftwood_sapling": "Driftwood Sapling"
 }
