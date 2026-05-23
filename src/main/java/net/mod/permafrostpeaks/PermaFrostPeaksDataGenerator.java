@@ -9,6 +9,7 @@ import net.mod.permafrostpeaks.world.ModPlacedFeatures;
 import net.minecraft.registry.RegistryBuilder;
 import net.minecraft.registry.RegistryKeys;
 import net.mod.permafrostpeaks.world.biome.ModBiomes;
+import net.mod.permafrostpeaks.world.dimension.ModDimensions;
 
 public class PermaFrostPeaksDataGenerator implements DataGeneratorEntrypoint {
     @Override
@@ -30,6 +31,8 @@ public class PermaFrostPeaksDataGenerator implements DataGeneratorEntrypoint {
         registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap);
         registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, ModPlacedFeatures::bootstrap);
         registryBuilder.addRegistry(RegistryKeys.BIOME, ModBiomes::bootstrap);
+        registryBuilder.addRegistry(RegistryKeys.DIMENSION_TYPE, ModDimensions::bootstrap);
+
 
     }
 }

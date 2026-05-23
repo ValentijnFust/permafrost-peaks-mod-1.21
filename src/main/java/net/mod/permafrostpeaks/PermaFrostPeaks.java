@@ -6,6 +6,8 @@ import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRe
 import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
 import net.fabricmc.fabric.api.registry.*;
+import net.kyrptonaught.customportalapi.api.CustomPortalBuilder;
+import net.minecraft.util.Identifier;
 import net.mod.permafrostpeaks.block.ModBlocks;
 import net.mod.permafrostpeaks.entity.ModEntities;
 import net.mod.permafrostpeaks.entity.custom.MantisEntity;
@@ -48,8 +50,16 @@ public class PermaFrostPeaks implements ModInitializer {
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DRIFTWOOD_LEAVES, 30, 60);
 
 
-        //Entities Related
+        //Entities
         ModEntities.registerModEntities();
         FabricDefaultAttributeRegistry.register(ModEntities.MANTIS, MantisEntity.createAttributes());
-	}
+
+        //Dimension
+        CustomPortalBuilder.beginPortal()
+                .frameBlock(ModBlocks.BLUE_CRYSTAL_BLOCK)
+                .lightWithItem(Items.FLINT_AND_STEEL)
+                .destDimID(Identifier.of(PermaFrostPeaks.MOD_ID, "permafrostpeaks"))
+                .tintColor(0xc76efa)
+                .registerPortal();
+    }
 }
