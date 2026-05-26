@@ -57,7 +57,7 @@ public class PermaFrostPeaks implements ModInitializer {
         //Dimension
         CustomPortalBuilder.beginPortal()
                 .frameBlock(ModBlocks.BLUE_CRYSTAL_BLOCK)
-                .lightWithItem(Items.FLINT_AND_STEEL)
+                .lightWithItem(ModItems.BLUE_CRYSTAL_SHARD)
                 .destDimID(Identifier.of(PermaFrostPeaks.MOD_ID, "permafrostpeaks"))
                 .tintColor(0xc76efa)
                 .registerPortal();

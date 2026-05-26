@@ -19,61 +19,84 @@ import net.minecraft.world.gen.feature.VegetationPlacedFeatures;
 
 
 public class ModBiomes {
-    public static final RegistryKey<Biome> TEST_BIOME = RegistryKey.of(
+
+    public static final RegistryKey<Biome> FROZEN_PEAKS = RegistryKey.of(
             RegistryKeys.BIOME,
-            Identifier.of(PermaFrostPeaks.MOD_ID, "test_biome"));
+            Identifier.of(PermaFrostPeaks.MOD_ID, "frozen_peaks")
+    );
+
+    public static final RegistryKey<Biome> FROZEN_TAIGA = RegistryKey.of(
+            RegistryKeys.BIOME,
+            Identifier.of(PermaFrostPeaks.MOD_ID, "frozen_taiga")
+    );
 
     public static void bootstrap(Registerable<Biome> context) {
-        context.register(TEST_BIOME, testBiome(context));
-    }
-    public static void globalOverworldGeneration(GenerationSettings.LookupBackedBuilder builder) {
-        DefaultBiomeFeatures.addLandCarvers(builder);
-        DefaultBiomeFeatures.addAmethystGeodes(builder);
-        DefaultBiomeFeatures.addDungeons(builder);
-        DefaultBiomeFeatures.addMineables(builder);
-        DefaultBiomeFeatures.addSprings(builder);
-        DefaultBiomeFeatures.addFrozenTopLayer(builder);
+
+        context.register(FROZEN_PEAKS, frozenPeaks(context));
+        context.register(FROZEN_TAIGA, frozenTaiga(context));
     }
 
-    public static Biome testBiome(Registerable<Biome> context) {
-        SpawnSettings.Builder spawnBuilder = new SpawnSettings.Builder();
+    private static Biome frozenPeaks(Registerable<Biome> context) {
 
-        spawnBuilder.spawn(SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry(EntityType.WOLF, 5, 4, 4));
+        SpawnSettings.Builder spawnSettings = new SpawnSettings.Builder();
 
-        DefaultBiomeFeatures.addFarmAnimals(spawnBuilder);
-        DefaultBiomeFeatures.addBatsAndMonsters(spawnBuilder);
+        DefaultBiomeFeatures.addFarmAnimals(spawnSettings);
+        DefaultBiomeFeatures.addBatsAndMonsters(spawnSettings);
 
-        GenerationSettings.LookupBackedBuilder biomeBuilder =
-                new GenerationSettings.LookupBackedBuilder(context.getRegistryLookup(RegistryKeys.PLACED_FEATURE),
-                        context.getRegistryLookup(RegistryKeys.CONFIGURED_CARVER));
+        GenerationSettings.LookupBackedBuilder generationSettings =
+                new GenerationSettings.LookupBackedBuilder(
+                        context.getRegistryLookup(RegistryKeys.PLACED_FEATURE),
+                        context.getRegistryLookup(RegistryKeys.CONFIGURED_CARVER)
+                );
 
-        globalOverworldGeneration(biomeBuilder);
-        DefaultBiomeFeatures.addMossyRocks(biomeBuilder);
-        DefaultBiomeFeatures.addDefaultOres(biomeBuilder);
-        DefaultBiomeFeatures.addExtraGoldOre(biomeBuilder);
-
-        biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, VegetationPlacedFeatures.TREES_PLAINS);
-        DefaultBiomeFeatures.addForestFlowers(biomeBuilder);
-        DefaultBiomeFeatures.addLargeFerns(biomeBuilder);
-
-        DefaultBiomeFeatures.addDefaultMushrooms(biomeBuilder);
-        DefaultBiomeFeatures.addDefaultVegetation(biomeBuilder);
+        DefaultBiomeFeatures.addFrozenTopLayer(generationSettings);
 
         return new Biome.Builder()
                 .precipitation(true)
-                .downfall(0.4f)
-                .temperature(0.7f)
-                .generationSettings(biomeBuilder.build())
-                .spawnSettings(spawnBuilder.build())
-                .effects((new BiomeEffects.Builder())
-                        .waterColor(0xe82e3b)
-                        .waterFogColor(0xbf1b26)
-                        .skyColor(0x30c918)
-                        .grassColor(0x7f03fc)
-                        .foliageColor(0xd203fc)
-                        .fogColor(0x22a1e6)
+                .temperature(-0.7f)
+                .downfall(0.9f)
+                .effects(new BiomeEffects.Builder()
+                        .waterColor(4159204)
+                        .waterFogColor(329011)
+                        .fogColor(12638463)
+                        .skyColor(8103167)
                         .moodSound(BiomeMoodSound.CAVE)
                         .build())
+                .spawnSettings(spawnSettings.build())
+                .generationSettings(generationSettings.build())
+                .build();
+    }
+
+    private static Biome frozenTaiga(Registerable<Biome> context) {
+
+        SpawnSettings.Builder spawnSettings = new SpawnSettings.Builder();
+
+        DefaultBiomeFeatures.addFarmAnimals(spawnSettings);
+
+        GenerationSettings.LookupBackedBuilder generationSettings =
+                new GenerationSettings.LookupBackedBuilder(
+                        context.getRegistryLookup(RegistryKeys.PLACED_FEATURE),
+                        context.getRegistryLookup(RegistryKeys.CONFIGURED_CARVER)
+                );
+
+        DefaultBiomeFeatures.addTaigaTrees(generationSettings);
+        DefaultBiomeFeatures.addDefaultOres(generationSettings);
+        DefaultBiomeFeatures.addFrozenTopLayer(generationSettings);
+
+
+        return new Biome.Builder()
+                .precipitation(true)
+                .temperature(-0.5f)
+                .downfall(0.8f)
+                .effects(new BiomeEffects.Builder()
+                        .waterColor(4159204)
+                        .waterFogColor(329011)
+                        .fogColor(12638463)
+                        .skyColor(8103167)
+                        .moodSound(BiomeMoodSound.CAVE)
+                        .build())
+                .spawnSettings(spawnSettings.build())
+                .generationSettings(generationSettings.build())
                 .build();
     }
 }

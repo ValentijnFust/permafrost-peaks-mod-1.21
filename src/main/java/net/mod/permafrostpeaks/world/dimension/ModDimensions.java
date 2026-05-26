@@ -23,7 +23,7 @@ public class ModDimensions {
             Identifier.of(PermaFrostPeaks.MOD_ID, "permafrostpeaks_type"));
     public static void bootstrap(Registerable<DimensionType> context) {
         context.register(PERMAFROSTPEAKS_TYPE, new DimensionType(
-                OptionalLong.of(12000), // fixedTime
+                OptionalLong.of(37000), // fixedTime
                 false, // hasSkylight
                 false, // hasCeiling
                 false, // ultraWarm

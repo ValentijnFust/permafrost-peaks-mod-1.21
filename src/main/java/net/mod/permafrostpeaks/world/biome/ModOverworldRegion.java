@@ -12,16 +12,6 @@ import terrablender.api.RegionType;
 
 import java.util.function.Consumer;
 
-public class ModOverworldRegion extends Region {
-    public ModOverworldRegion(Identifier name, int weight) {
-        super(name, RegionType.OVERWORLD, weight);
-    }
+public class ModOverworldRegion {
 
-    @Override
-    public void addBiomes(Registry<Biome> registry, Consumer<Pair<MultiNoiseUtil.NoiseHypercube,
-            RegistryKey<Biome>>> mapper) {
-        this.addModifiedVanillaOverworldBiomes(mapper, modifiedVanillaOverworldBuilder -> {
-            modifiedVanillaOverworldBuilder.replaceBiome(BiomeKeys.FOREST, ModBiomes.TEST_BIOME);
-        });
-    }
 }
