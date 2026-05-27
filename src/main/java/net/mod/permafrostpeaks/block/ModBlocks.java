@@ -3,6 +3,8 @@ package net.mod.permafrostpeaks.block;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.NoteBlockInstrument;
+import net.mod.permafrostpeaks.block.custom.*;
+import net.mod.permafrostpeaks.world.tree.ModSaplingGenerators;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -13,6 +15,7 @@ import net.minecraft.util.Identifier;
 import net.mod.permafrostpeaks.PermaFrostPeaks;
 import net.mod.permafrostpeaks.world.tree.ModSaplingGenerators;
 import net.minecraft.block.*;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 
 public class ModBlocks {
@@ -26,6 +29,13 @@ public class ModBlocks {
                     .mapColor(MapColor.DARK_RED)
             ));
 
+    public static final Block PINK_GARNET_END_ORE = registerBlock("pink_garnet_end_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(4, 8),
+                    AbstractBlock.Settings.create().strength(7f).requiresTool()));
+    public static final Block PINK_GARNET_NETHER_ORE = registerBlock("pink_garnet_nether_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(1, 5),
+                    AbstractBlock.Settings.create().strength(3f).requiresTool()));
+
     public static final Block ANTONIO_LIBERTO_BLOCK = registerBlock("antonio_liberto_block",
             new Block(AbstractBlock.Settings.create()
                     .strength(3F)
@@ -33,6 +43,7 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.SLIME)
                     .slipperiness(8F)
                     .mapColor(MapColor.DARK_DULL_PINK)
+                    .luminance(state -> 15)
             ));
 
     public static final Block GREEN_CRYSTAL_BLOCK = registerBlock("green_crystal_block",
@@ -89,7 +100,7 @@ public class ModBlocks {
             new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
 
     public static final Block DRIFTWOOD_SAPLING = registerBlock("driftwood_sapling",
-            new SaplingBlock(ModSaplingGenerators.DRIFTWOOD, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
+            new ModSaplingBlock(ModSaplingGenerators.DRIFTWOOD, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING), Blocks.STONE));
 
     //If there's anything that needs testing use the block below for that
     //There are also settings for this block in the PermaFrostPeaksClient.java file

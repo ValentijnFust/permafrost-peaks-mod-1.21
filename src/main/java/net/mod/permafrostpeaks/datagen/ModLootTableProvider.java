@@ -2,6 +2,8 @@ package net.mod.permafrostpeaks.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
+import net.minecraft.block.Blocks;
+import net.minecraft.item.Items;
 import net.mod.permafrostpeaks.block.ModBlocks;
 import net.mod.permafrostpeaks.item.ModItems;
 import net.minecraft.block.Block;
@@ -36,6 +38,9 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.PINK_GARNET_BLOCK);
         addDrop(ModBlocks.TESTING_BLOCK);
         addDrop(ModBlocks.ANTONIO_LIBERTO_BLOCK);
+        addDrop(ModBlocks.PINK_GARNET_END_ORE, multipleOreDrops(ModBlocks.PINK_GARNET_END_ORE, ModItems.PINK_GARNET, 4, 9));
+        addDrop(ModBlocks.PINK_GARNET_NETHER_ORE, multipleOreDrops(ModBlocks.PINK_GARNET_NETHER_ORE, ModItems.PINK_GARNET, 3, 8));
+
 
         //Trees
         addDrop(ModBlocks.DRIFTWOOD_LOG);

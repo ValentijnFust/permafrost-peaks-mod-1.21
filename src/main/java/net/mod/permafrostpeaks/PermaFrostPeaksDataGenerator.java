@@ -1,4 +1,4 @@
-package net.mod.permafrostpeaks;
+ package net.mod.permafrostpeaks;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;

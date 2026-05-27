@@ -19,6 +19,9 @@
   "block.permafrostpeaks.red_crystal_block": "Red Crystal Block",
   "block.permafrostpeaks.yellow_crystal_block": "Yellow Crystal Block",
   "block.permafrostpeaks.testing_block": "Testing Block",
+  "block.permafrostpeaks.pink_garnet_end_ore": "Pink Garnet End Ore",
+  "block.permafrostpeaks.pink_garnet_nether_ore": "Pink Garnet Nether Ore",
+
 
   "//": "Item Groups",
   "itemgroup.permafrostpeaks.permafrost_peaks": "PermaFrost Peaks",

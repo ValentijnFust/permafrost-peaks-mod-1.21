@@ -1,0 +1,9 @@
+package net.mod.permafrostpeaks.world.gen;
+
+public class ModWorldGeneration {
+    public static void generateModWorldGen() {
+
+        ModTreeGeneration.generateTrees();
+        ModOreGeneration.generateOres();
+    }
+}
