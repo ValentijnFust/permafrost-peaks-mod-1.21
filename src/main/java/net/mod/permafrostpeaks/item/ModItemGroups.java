@@ -28,6 +28,9 @@ public class ModItemGroups {
                         entries.add(ModItems.GREEN_CRYSTAL_SHARD);
                         entries.add(ModItems.YELLOW_CRYSTAL_SHARD);
 
+                        //Spawn Eggs
+                        entries.add(ModItems.MANTIS_SPAWN_EGG);
+
                         //Blocks
                         entries.add(ModBlocks.BLUE_CRYSTAL_BLOCK);
                         entries.add(ModBlocks.RED_CRYSTAL_BLOCK);
@@ -49,6 +52,15 @@ public class ModItemGroups {
                         entries.add(ModItems.PINK_GARNET_CHESTPLATE);
                         entries.add(ModItems.PINK_GARNET_LEGGINGS);
                         entries.add(ModItems.PINK_GARNET_BOOTS);
+
+                        //Trees
+                        entries.add(ModBlocks.DRIFTWOOD_LOG);
+                        entries.add(ModBlocks.DRIFTWOOD_WOOD);
+                        entries.add(ModBlocks.STRIPPED_DRIFTWOOD_LOG);
+                        entries.add(ModBlocks.STRIPPED_DRIFTWOOD_WOOD);
+                        entries.add(ModBlocks.DRIFTWOOD_PLANKS);
+                        entries.add(ModBlocks.DRIFTWOOD_LEAVES);
+                        entries.add(ModBlocks.DRIFTWOOD_SAPLING);
 
                     }).build());
 

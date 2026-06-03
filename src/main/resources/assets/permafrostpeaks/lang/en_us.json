@@ -8,6 +8,7 @@
   "item.permafrostpeaks.red_crystal_shard": "Red Crystal Shard",
   "item.permafrostpeaks.yellow_crystal_shard": "Yellow Crystal Shard",
   "item.permafrostpeaks.green_crystal_shard": "Green Crystal Shard",
+  "item.permafrostpeaks.mantis_spawn_egg": "Mantis Spawn Egg",
 
 
   "//": "Blocks",
@@ -18,6 +19,9 @@
   "block.permafrostpeaks.red_crystal_block": "Red Crystal Block",
   "block.permafrostpeaks.yellow_crystal_block": "Yellow Crystal Block",
   "block.permafrostpeaks.testing_block": "Testing Block",
+  "block.permafrostpeaks.pink_garnet_end_ore": "Pink Garnet End Ore",
+  "block.permafrostpeaks.pink_garnet_nether_ore": "Pink Garnet Nether Ore",
+
 
   "//": "Item Groups",
   "itemgroup.permafrostpeaks.permafrost_peaks": "PermaFrost Peaks",
@@ -26,5 +30,18 @@
   "item.permafrostpeaks.pink_garnet_helmet": "Pink Garnet Helmet",
   "item.permafrostpeaks.pink_garnet_chestplate": "Pink Garnet Chestplate",
   "item.permafrostpeaks.pink_garnet_leggings": "Pink Garnet Leggings",
-  "item.permafrostpeaks.pink_garnet_boots": "Pink Garnet Boots"
+  "item.permafrostpeaks.pink_garnet_boots": "Pink Garnet Boots",
+
+  "//": "Entities",
+  "entity.permafrostpeaks.mantis": "Mantis",
+
+  "//": "Trees",
+  "block.permafrostpeaks.driftwood_log": "Driftwood Log",
+  "block.permafrostpeaks.driftwood_wood": "Driftwood Wood",
+  "block.permafrostpeaks.stripped_driftwood_log": "Stripped Driftwood Log",
+  "block.permafrostpeaks.stripped_driftwood_wood": "Stripped Driftwood Wood",
+  "block.permafrostpeaks.driftwood_planks": "Driftwood Planks",
+  "block.permafrostpeaks.driftwood_leaves": "Driftwood Leaves",
+  "block.permafrostpeaks.driftwood_sapling": "Driftwood Sapling",
+  "item.permafrostpeaks.driftwood_sapling": "Driftwood Sapling"
 }
