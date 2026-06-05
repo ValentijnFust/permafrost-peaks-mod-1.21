@@ -39,6 +39,9 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DRIFTWOOD_PLANKS);
         blockStateModelGenerator.registerSingleton(ModBlocks.DRIFTWOOD_LEAVES, TexturedModel.LEAVES);
         blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.DRIFTWOOD_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+
+        //Block entities
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CRYSTAL_CRUSHER);
     }
 
     @Override
@@ -67,5 +70,7 @@ public class ModModelProvider extends FabricModelProvider {
         //Mobs
         itemModelGenerator.register(ModItems.MANTIS_SPAWN_EGG,
                 new Model(Optional.of(Identifier.of("item/template_spawn_egg")), Optional.empty()));
+
+
     }
 }

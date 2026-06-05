@@ -13,6 +13,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.mod.permafrostpeaks.PermaFrostPeaks;
+import net.mod.permafrostpeaks.block.custom.CrystalCrusherBlock;
 import net.mod.permafrostpeaks.world.tree.ModSaplingGenerators;
 import net.minecraft.block.*;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
@@ -112,7 +113,8 @@ public class ModBlocks {
                     .nonOpaque()
             ));
 
-
+    public static final Block CRYSTAL_CRUSHER = registerBlock("crystal_crusher",
+            new CrystalCrusherBlock(AbstractBlock.Settings.create()));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

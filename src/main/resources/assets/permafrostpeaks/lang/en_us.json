@@ -10,7 +10,6 @@
   "item.permafrostpeaks.green_crystal_shard": "Green Crystal Shard",
   "item.permafrostpeaks.mantis_spawn_egg": "Mantis Spawn Egg",
 
-
   "//": "Blocks",
   "block.permafrostpeaks.pink_garnet_block": "Pink Garnet Block",
   "block.permafrostpeaks.antonio_liberto_block": "Antonio Liberto Squared",
@@ -34,6 +33,9 @@
 
   "//": "Entities",
   "entity.permafrostpeaks.mantis": "Mantis",
+
+  "//": "Block Entities",
+  "block.permafrostpeaks.crystal_crusher": "Crystal Crusher",
 
   "//": "Trees",
   "block.permafrostpeaks.driftwood_log": "Driftwood Log",
