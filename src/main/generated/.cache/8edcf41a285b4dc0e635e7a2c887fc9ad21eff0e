@@ -1,4 +1,4 @@
-// 1.21	2026-06-05T20:12:25.423641	PermaFrost Peaks/Model Definitions
+// 1.21	2026-06-09T11:23:51.148322	PermaFrost Peaks/Model Definitions
 4d1162fd479601a75aa28a9b7f017c2f2497d16a assets/permafrostpeaks/models/item/antonio_liberto.json
 78e6d47607bd4b67d9a928abc4f8a474057fa584 assets/permafrostpeaks/models/item/pink_garnet_leggings_diamond_trim.json
 77e3f18919d421db0eba1a8edad7dcf7f1fde00c assets/permafrostpeaks/models/item/pink_garnet_leggings_quartz_trim.json
@@ -27,7 +27,7 @@ a52b51b6f6a3d692a742c10d4edcc3a101b36e63 assets/permafrostpeaks/models/item/pink
 b6ba38d9f131690edad52b8fafedb42620b3f2f4 assets/permafrostpeaks/models/item/pink_garnet_boots_redstone_trim.json
 0469c0baea9317076a240aa237965026a61e87bc assets/permafrostpeaks/models/item/blue_crystal_shard.json
 7641da539af9a01a017460c301ce9dadaa0bea4a assets/permafrostpeaks/models/item/pink_garnet_helmet_redstone_trim.json
-5ba91642f3a60a2c59f714c4eff60415f25bb820 assets/permafrostpeaks/models/block/crystal_crusher.json
+e3341aec0ebabc8f07a2e175a8ae740172c1657d assets/permafrostpeaks/models/block/crystal_crusher.json
 809b9e52c5b858ebc843dbd8b7645d5d8a4b1af3 assets/permafrostpeaks/models/block/stripped_driftwood_log_horizontal.json
 7a374c0f684aa33d5f87e8d01a599680036643b7 assets/permafrostpeaks/models/item/pink_garnet_boots_emerald_trim.json
 5cd63ae0e5f274767473ce322ce08fa640115190 assets/permafrostpeaks/models/item/yellow_crystal_shard.json

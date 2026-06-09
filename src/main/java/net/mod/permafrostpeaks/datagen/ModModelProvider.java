@@ -17,6 +17,7 @@ public class ModModelProvider extends FabricModelProvider {
         super(output);
     }
 
+    //Block Model generator
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         //Blocks
@@ -40,10 +41,36 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSingleton(ModBlocks.DRIFTWOOD_LEAVES, TexturedModel.LEAVES);
         blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.DRIFTWOOD_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 
-        //Block entities
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CRYSTAL_CRUSHER);
+        registerCrystalCrusher(blockStateModelGenerator);
     }
 
+    //6-sided Block Model generator
+    private void registerCrystalCrusher(BlockStateModelGenerator generator) {
+        TextureMap textures = new TextureMap()
+                .put(TextureKey.DOWN, Identifier.of("permafrostpeaks", "block/crystal_crusher_bottom"))
+                .put(TextureKey.UP, Identifier.of("permafrostpeaks", "block/crystal_crusher_top"))
+                .put(TextureKey.NORTH, Identifier.of("permafrostpeaks", "block/crystal_crusher_front"))
+                .put(TextureKey.SOUTH, Identifier.of("permafrostpeaks", "block/crystal_crusher_back"))
+                .put(TextureKey.WEST, Identifier.of("permafrostpeaks", "block/crystal_crusher_left"))
+                .put(TextureKey.EAST, Identifier.of("permafrostpeaks", "block/crystal_crusher_right"))
+                .put(TextureKey.PARTICLE, Identifier.of("permafrostpeaks", "block/crystal_crusher_top"));
+
+        Identifier model = Models.CUBE.upload(
+                ModBlocks.CRYSTAL_CRUSHER,
+                textures,
+                generator.modelCollector
+        );
+
+        generator.blockStateCollector.accept(
+                VariantsBlockStateSupplier.create(
+                        ModBlocks.CRYSTAL_CRUSHER,
+                        BlockStateVariant.create()
+                                .put(VariantSettings.MODEL, model)
+                )
+        );
+    }
+
+    //Item Model generator
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         //Items
