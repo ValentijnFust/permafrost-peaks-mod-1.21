@@ -12,7 +12,7 @@ import net.mod.permafrostpeaks.entity.custom.MantisEntity;
         public static final EntityType<MantisEntity> MANTIS = Registry.register(Registries.ENTITY_TYPE,
                 Identifier.of(PermaFrostPeaks.MOD_ID, "mantis"),
                 EntityType.Builder.create(MantisEntity::new, SpawnGroup.CREATURE)
-                        .dimensions(1f, 2.5f).build());
+                        .dimensions(0.5f, 0.9f).build());
 
 
     public static void registerModEntities() {
