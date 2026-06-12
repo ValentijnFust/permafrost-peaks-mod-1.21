@@ -62,6 +62,9 @@ public class ModItemGroups {
                         entries.add(ModBlocks.DRIFTWOOD_LEAVES);
                         entries.add(ModBlocks.DRIFTWOOD_SAPLING);
 
+                        //Block Entities
+                        entries.add(ModBlocks.CRYSTAL_CRUSHER);
+
                     }).build());
 
 

@@ -1,0 +1,31 @@
+{
+  "parent": "permafrostpeaks:root",
+  "display": {
+    "icon": {
+      "id": "permafrostpeaks:goat_fur",
+      "count": 1
+    },
+    "title": {
+      "text": "A Frozen World?"
+    },
+    "description": {
+      "text": "Enter the Permafrost Peaks dimension."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "entered_permafrostpeaks": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "from": "minecraft:overworld",
+        "to": "permafrostpeaks:permafrostpeaks"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 20
+  }
+}
