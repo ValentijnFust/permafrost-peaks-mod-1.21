@@ -8,7 +8,7 @@
   "item.permafrostpeaks.red_crystal_shard": "Red Crystal Shard",
   "item.permafrostpeaks.yellow_crystal_shard": "Yellow Crystal Shard",
   "item.permafrostpeaks.green_crystal_shard": "Green Crystal Shard",
-  "item.permafrostpeaks.mantis_spawn_egg": "Mantis Spawn Egg",
+  "item.permafrostpeaks.mantis_spawn_egg": "Troll Spawn Egg",
 
   "//": "Blocks",
   "block.permafrostpeaks.pink_garnet_block": "Pink Garnet Block",
@@ -26,13 +26,13 @@
   "itemgroup.permafrostpeaks.permafrost_peaks": "PermaFrost Peaks",
 
   "//": "Armor",
-  "item.permafrostpeaks.pink_garnet_helmet": "Pink Garnet Helmet",
-  "item.permafrostpeaks.pink_garnet_chestplate": "Pink Garnet Chestplate",
-  "item.permafrostpeaks.pink_garnet_leggings": "Pink Garnet Leggings",
-  "item.permafrostpeaks.pink_garnet_boots": "Pink Garnet Boots",
+  "item.permafrostpeaks.pink_garnet_helmet": "Fur Helmet",
+  "item.permafrostpeaks.pink_garnet_chestplate": "Fur Chestplate",
+  "item.permafrostpeaks.pink_garnet_leggings": "Fur Leggings",
+  "item.permafrostpeaks.pink_garnet_boots": "Fur Boots",
 
   "//": "Entities",
-  "entity.permafrostpeaks.mantis": "Mantis",
+  "entity.permafrostpeaks.mantis": "Troll",
 
   "//": "Block Entities",
   "block.permafrostpeaks.crystal_crusher": "Crystal Crusher",
