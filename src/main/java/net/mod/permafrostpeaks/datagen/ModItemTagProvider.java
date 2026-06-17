@@ -22,10 +22,16 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ModTags.Items.TRANSFORMABLE_ITEMS)
                 //Items
                 .add(ModItems.GOAT_FUR)
-                .add(ModItems.GREEN_CRYSTAL_SHARD)
-                .add(ModItems.YELLOW_CRYSTAL_SHARD)
+
                 .add(ModItems.BLUE_CRYSTAL_SHARD)
                 .add(ModItems.RED_CRYSTAL_SHARD)
+                .add(ModItems.YELLOW_CRYSTAL_SHARD)
+                .add(ModItems.GREEN_CRYSTAL_SHARD)
+
+                .add(ModItems.BLUE_CRYSTAL_DUST)
+                .add(ModItems.RED_CRYSTAL_DUST)
+                .add(ModItems.YELLOW_CRYSTAL_DUST)
+                .add(ModItems.GREEN_CRYSTAL_DUST)
 
                 //Testing Items
                 .add(ModItems.PINK_GARNET)

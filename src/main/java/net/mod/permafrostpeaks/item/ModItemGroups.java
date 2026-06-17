@@ -23,10 +23,16 @@ public class ModItemGroups {
 
                         //Items
                         entries.add(ModItems.GOAT_FUR);
+
                         entries.add(ModItems.BLUE_CRYSTAL_SHARD);
                         entries.add(ModItems.RED_CRYSTAL_SHARD);
-                        entries.add(ModItems.GREEN_CRYSTAL_SHARD);
                         entries.add(ModItems.YELLOW_CRYSTAL_SHARD);
+                        entries.add(ModItems.GREEN_CRYSTAL_SHARD);
+
+                        entries.add(ModItems.BLUE_CRYSTAL_DUST);
+                        entries.add(ModItems.RED_CRYSTAL_DUST);
+                        entries.add(ModItems.YELLOW_CRYSTAL_DUST);
+                        entries.add(ModItems.GREEN_CRYSTAL_DUST);
 
                         //Spawn Eggs
                         entries.add(ModItems.MANTIS_SPAWN_EGG);

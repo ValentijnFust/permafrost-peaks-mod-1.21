@@ -3,11 +3,19 @@
   "item.permafrostpeaks.pink_garnet": "Pink Garnet",
   "item.permafrostpeaks.red_garnet": "Red Garnet",
   "item.permafrostpeaks.antonio_liberto": "Antonio Liberto",
+
   "item.permafrostpeaks.goat_fur": "Goat Fur",
+
   "item.permafrostpeaks.blue_crystal_shard": "Blue Crystal Shard",
   "item.permafrostpeaks.red_crystal_shard": "Red Crystal Shard",
   "item.permafrostpeaks.yellow_crystal_shard": "Yellow Crystal Shard",
   "item.permafrostpeaks.green_crystal_shard": "Green Crystal Shard",
+
+  "item.permafrostpeaks.blue_crystal_dust": "Blue Crystal Dust",
+  "item.permafrostpeaks.red_crystal_dust": "Red Crystal Dust",
+  "item.permafrostpeaks.yellow_crystal_dust": "Yellow Crystal Dust",
+  "item.permafrostpeaks.green_crystal_dust": "Green Crystal Dust",
+
   "item.permafrostpeaks.mantis_spawn_egg": "Troll Spawn Egg",
 
   "//": "Blocks",

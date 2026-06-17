@@ -1,0 +1,42 @@
+{
+  "parent": "permafrostpeaks:entered_permafrostpeaks",
+  "display": {
+    "icon": {
+      "id": "permafrostpeaks:crystal_crusher"
+    },
+    "title": {
+      "text": "Crystal Processing"
+    },
+    "description": {
+      "text": "Use a Crystal Crusher."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "use_crusher": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {}
+          }
+        ],
+        "player": {},
+        "block": {
+          "blocks": [
+            "permafrostpeaks:crystal_crusher"
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "use_crusher"
+    ]
+  ]
+}

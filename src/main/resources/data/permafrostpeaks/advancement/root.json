@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "id": "permafrostpeaks:blue_crystal_block",
+      "id": "permafrostpeaks:goat_fur",
       "count": 1
     },
     "title": {
@@ -10,7 +10,7 @@
     "description": {
       "text": "Enter the frozen dimension of Permafrost Peaks."
     },
-    "background": "permafrostpeaks:textures/block/blue_crystal_block.png",
+    "background": "permafrostpeaks:textures/block/yellow_crystal_block.png",
     "frame": "task",
     "show_toast": false,
     "announce_to_chat": false,
