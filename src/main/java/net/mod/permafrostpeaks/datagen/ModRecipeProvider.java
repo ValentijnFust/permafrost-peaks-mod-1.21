@@ -29,14 +29,5 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.YELLOW_CRYSTAL_SHARD, RecipeCategory.MISC, ModBlocks.YELLOW_CRYSTAL_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.RED_CRYSTAL_SHARD, RecipeCategory.MISC, ModBlocks.RED_CRYSTAL_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.BLUE_CRYSTAL_SHARD, RecipeCategory.MISC, ModBlocks.BLUE_CRYSTAL_BLOCK);
-
-        //Shaped Crafting
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.PINK_GARNET_BLOCK, 9)
-                .pattern("###")
-                .pattern("###")
-                .pattern("###")
-                .input('#', ModItems.PINK_GARNET)
-                .criterion(hasItem(ModItems.PINK_GARNET), conditionsFromItem(ModItems.PINK_GARNET))
-                .offerTo(exporter);
     }
 }

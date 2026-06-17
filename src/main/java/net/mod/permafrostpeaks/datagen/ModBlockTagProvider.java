@@ -16,22 +16,15 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
+
                 //Blocks
                 .add(ModBlocks.GREEN_CRYSTAL_BLOCK)
                 .add(ModBlocks.YELLOW_CRYSTAL_BLOCK)
                 .add(ModBlocks.BLUE_CRYSTAL_BLOCK)
                 .add(ModBlocks.RED_CRYSTAL_BLOCK)
-
-                //Testing blocks
-                .add(ModBlocks.PINK_GARNET_BLOCK)
-                .add(ModBlocks.TESTING_BLOCK)
-                .add(ModBlocks.ANTONIO_LIBERTO_BLOCK)
-
-        ;
-        getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
-
         ;
 
+        //Needs Iron Tools to mine
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.GREEN_CRYSTAL_BLOCK)
                 .add(ModBlocks.YELLOW_CRYSTAL_BLOCK)
@@ -39,10 +32,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.RED_CRYSTAL_BLOCK)
         ;
 
-        getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
-
-        ;
-
+        //Trees
         getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
                 .add(ModBlocks.DRIFTWOOD_LOG)
                 .add(ModBlocks.DRIFTWOOD_WOOD)

@@ -22,31 +22,8 @@ import net.minecraft.util.math.intprovider.UniformIntProvider;
 public class ModBlocks {
 
     //To see the registered block in the inventory go to the ModItemGroups.java file and add the corresponding code there
-    public static final Block PINK_GARNET_BLOCK = registerBlock("pink_garnet_block",
-            new Block(AbstractBlock.Settings.create()
-                    .strength(4F)
-                    .requiresTool()
-                    .sounds(BlockSoundGroup.AMETHYST_BLOCK)
-                    .mapColor(MapColor.DARK_RED)
-            ));
 
-    public static final Block PINK_GARNET_END_ORE = registerBlock("pink_garnet_end_ore",
-            new ExperienceDroppingBlock(UniformIntProvider.create(4, 8),
-                    AbstractBlock.Settings.create().strength(7f).requiresTool()));
-    public static final Block PINK_GARNET_NETHER_ORE = registerBlock("pink_garnet_nether_ore",
-            new ExperienceDroppingBlock(UniformIntProvider.create(1, 5),
-                    AbstractBlock.Settings.create().strength(3f).requiresTool()));
-
-    public static final Block ANTONIO_LIBERTO_BLOCK = registerBlock("antonio_liberto_block",
-            new Block(AbstractBlock.Settings.create()
-                    .strength(3F)
-                    .requiresTool()
-                    .sounds(BlockSoundGroup.SLIME)
-                    .slipperiness(8F)
-                    .mapColor(MapColor.DARK_DULL_PINK)
-                    .luminance(state -> 15)
-            ));
-
+    //Stats for each blocks
     public static final Block GREEN_CRYSTAL_BLOCK = registerBlock("green_crystal_block",
             new TransparentBlock(AbstractBlock.Settings.create()
                     .instrument(NoteBlockInstrument.HAT)
@@ -72,7 +49,7 @@ public class ModBlocks {
                     .strength(7F)
                     .sounds(BlockSoundGroup.AMETHYST_BLOCK)
                     .nonOpaque()
-                    .luminance(state -> 7)
+                    .luminance(state -> 5)
                     .mapColor(MapColor.DARK_RED)
             ));
 
@@ -102,29 +79,23 @@ public class ModBlocks {
     public static final Block DRIFTWOOD_SAPLING = registerBlock("driftwood_sapling",
             new ModSaplingBlock(ModSaplingGenerators.DRIFTWOOD, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING), Blocks.STONE));
 
-    //If there's anything that needs testing use the block below for that
-    //There are also settings for this block in the PermaFrostPeaksClient.java file
-    public static final Block TESTING_BLOCK = registerBlock("testing_block",
-            new TransparentBlock(AbstractBlock.Settings.create()
-                    .instrument(NoteBlockInstrument.HAT)
-                    .strength(0.3F)
-                    .sounds(BlockSoundGroup.ANCIENT_DEBRIS)
-                    .nonOpaque()
-            ));
-
+    //Block Entity
     public static final Block CRYSTAL_CRUSHER = registerBlock("crystal_crusher",
             new CrystalCrusherBlock(AbstractBlock.Settings.create()));
 
+    //Function to register Blocks
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, Identifier.of(PermaFrostPeaks.MOD_ID, name), block);
     }
 
+    //Function to register Items
     private static void registerBlockItem(String name, Block block) {
         Registry.register(Registries.ITEM, Identifier.of(PermaFrostPeaks.MOD_ID, name),
                 new BlockItem(block, new Item.Settings()));
     }
 
+    //Final clause
     public static void registerModBlocks() {
         PermaFrostPeaks.LOGGER.info(PermaFrostPeaks.MOD_ID);
     }

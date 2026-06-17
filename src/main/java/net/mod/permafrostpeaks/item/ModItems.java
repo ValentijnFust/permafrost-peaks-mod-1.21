@@ -14,10 +14,6 @@ public class ModItems {
 
 //Item Registering
 //To see the registered item in the inventory go to the ModItemGroups.java file and add the corresponding code there
-    public static final Item PINK_GARNET = registerItem("pink_garnet", new Item(new Item.Settings()));
-    public static final Item RED_GARNET = registerItem("red_garnet", new Item(new Item.Settings()));
-    public static final Item ANTONIO_LIBERTO = registerItem("antonio_liberto", new Item(new Item.Settings()));
-
     public static final Item GOAT_FUR = registerItem("goat_fur", new Item(new Item.Settings()));
 
     public static final Item BLUE_CRYSTAL_SHARD = registerItem("blue_crystal_shard", new Item(new Item.Settings()));
