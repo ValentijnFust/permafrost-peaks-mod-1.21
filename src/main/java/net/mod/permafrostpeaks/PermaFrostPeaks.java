@@ -9,6 +9,7 @@ import net.fabricmc.fabric.api.registry.*;
 import net.kyrptonaught.customportalapi.api.CustomPortalBuilder;
 import net.minecraft.util.Identifier;
 import net.mod.permafrostpeaks.block.ModBlocks;
+import net.mod.permafrostpeaks.block.entity.ModBlockEntities;
 import net.mod.permafrostpeaks.entity.ModEntities;
 import net.mod.permafrostpeaks.entity.custom.MantisEntity;
 import net.mod.permafrostpeaks.item.ModItemGroups;
@@ -20,6 +21,7 @@ import net.minecraft.item.Items;
 import net.minecraft.potion.Potions;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
+import net.mod.permafrostpeaks.screen.ModScreenHandlers;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -53,6 +55,10 @@ public class PermaFrostPeaks implements ModInitializer {
         //Entities
         ModEntities.registerModEntities();
         FabricDefaultAttributeRegistry.register(ModEntities.MANTIS, MantisEntity.createAttributes());
+
+        //Block Entities
+        ModBlockEntities.registerBlockEntities();
+        ModScreenHandlers.registerScreenHandlers();
 
         //Dimension
         CustomPortalBuilder.beginPortal()
