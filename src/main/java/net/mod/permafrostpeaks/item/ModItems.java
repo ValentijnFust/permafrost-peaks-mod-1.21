@@ -15,20 +15,28 @@ public class ModItems {
 //Item Registering
 //To see the registered item in the inventory go to the ModItemGroups.java file and add the corresponding code there
     public static final Item PINK_GARNET = registerItem("pink_garnet", new Item(new Item.Settings()));
-
     public static final Item RED_GARNET = registerItem("red_garnet", new Item(new Item.Settings()));
-
     public static final Item ANTONIO_LIBERTO = registerItem("antonio_liberto", new Item(new Item.Settings()));
 
     public static final Item GOAT_FUR = registerItem("goat_fur", new Item(new Item.Settings()));
 
     public static final Item BLUE_CRYSTAL_SHARD = registerItem("blue_crystal_shard", new Item(new Item.Settings()));
-
     public static final Item RED_CRYSTAL_SHARD = registerItem("red_crystal_shard", new Item(new Item.Settings()));
-
     public static final Item YELLOW_CRYSTAL_SHARD = registerItem("yellow_crystal_shard", new Item(new Item.Settings()));
-
     public static final Item GREEN_CRYSTAL_SHARD = registerItem("green_crystal_shard", new Item(new Item.Settings()));
+
+    public static final Item BLUE_CRYSTAL_DUST = registerItem("blue_crystal_dust", new Item(new Item.Settings()
+            .fireproof()
+            .maxCount(16)));
+    public static final Item RED_CRYSTAL_DUST = registerItem("red_crystal_dust", new Item(new Item.Settings()
+            .fireproof()
+            .maxCount(16)));
+    public static final Item YELLOW_CRYSTAL_DUST = registerItem("yellow_crystal_dust", new Item(new Item.Settings()
+            .fireproof()
+            .maxCount(16)));
+    public static final Item GREEN_CRYSTAL_DUST = registerItem("green_crystal_dust", new Item(new Item.Settings()
+            .fireproof()
+            .maxCount(16)));
 
 //Armor registering
     public static final Item PINK_GARNET_HELMET = registerItem("pink_garnet_helmet",
@@ -50,7 +58,7 @@ public class ModItems {
     public static final Item MANTIS_SPAWN_EGG = registerItem("mantis_spawn_egg",
             new SpawnEggItem(ModEntities.MANTIS, 0x9dc783, 0xbfaf5f, new Item.Settings()));
 
-//
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(PermaFrostPeaks.MOD_ID, name), item);
     }

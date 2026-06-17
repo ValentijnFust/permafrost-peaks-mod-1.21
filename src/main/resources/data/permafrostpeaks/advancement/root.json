@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "id": "permafrostpeaks:goat_fur",
+      "count": 1
+    },
+    "title": {
+      "text": "Permafrost Peaks"
+    },
+    "description": {
+      "text": "Enter the frozen dimension of Permafrost Peaks."
+    },
+    "background": "permafrostpeaks:textures/block/yellow_crystal_block.png",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "entered_permafrostpeaks": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "from": "minecraft:overworld",
+        "to": "permafrostpeaks:permafrostpeaks"
+      }
+    }
+  }
+}
