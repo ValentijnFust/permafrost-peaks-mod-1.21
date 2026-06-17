@@ -7,7 +7,7 @@
       "type": "minecraft:multi_noise",
       "biomes": [
         {
-          "biome": "minecraft:jagged_peaks",
+          "biome": "minecraft:snowy_plains",
           "parameters": {
             "temperature": [
               -1,
@@ -18,45 +18,15 @@
               1
             ],
             "continentalness": [
-              0.55,
+              -1,
               1
             ],
             "erosion": [
-              -1,
-              0
+              0.6,
+              1
             ],
             "weirdness": [
               -1,
-              1
-            ],
-            "depth": [
-              -1,
-              1
-            ],
-            "offset": 0
-          }
-        },
-        {
-          "biome": "minecraft:jagged_peaks",
-          "parameters": {
-            "temperature": [
-              -1,
-              1
-            ],
-            "humidity": [
-              -1,
-              1
-            ],
-            "continentalness": [
-              0.55,
-              1
-            ],
-            "erosion": [
-              -1,
-              -0.35
-            ],
-            "weirdness": [
-              0.35,
               1
             ],
             "depth": [
@@ -78,16 +48,16 @@
               1
             ],
             "continentalness": [
-              0.55,
+              -1,
               1
             ],
             "erosion": [
               0,
-              1
+              0.2
             ],
             "weirdness": [
               -1,
-              0.45
+              0
             ],
             "depth": [
               -1,
@@ -97,7 +67,7 @@
           }
         },
         {
-          "biome": "minecraft:old_growth_spruce_taiga",
+          "biome": "minecraft:grove",
           "parameters": {
             "temperature": [
               -1,
@@ -108,16 +78,106 @@
               1
             ],
             "continentalness": [
-              0.55,
+              -1,
               1
             ],
             "erosion": [
-              0.3,
-              1
+              -0.15,
+              0.1
             ],
             "weirdness": [
-              -0.25,
-              0.25
+              -1,
+              0
+            ],
+            "depth": [
+              -1,
+              1
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "minecraft:snowy_slopes",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -1,
+              1
+            ],
+            "erosion": [
+              -0.3,
+              -0.15
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -1,
+              1
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "minecraft:jagged_peaks",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -1,
+              1
+            ],
+            "erosion": [
+              -1,
+              -0.1
+            ],
+            "weirdness": [
+              -0.5,
+              1
+            ],
+            "depth": [
+              -1,
+              1
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "minecraft:frozen_peaks",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -1,
+              1
+            ],
+            "erosion": [
+              -1,
+              -0.5
+            ],
+            "weirdness": [
+              -1,
+              0
             ],
             "depth": [
               -1,
