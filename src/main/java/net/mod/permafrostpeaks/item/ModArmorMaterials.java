@@ -16,14 +16,14 @@ import java.util.List;
 import java.util.function.Supplier;
 
 public class ModArmorMaterials {
-    public static final RegistryEntry<ArmorMaterial> PINK_GARNET_ARMOR_MATERIAL = registerArmorMaterial("goat_fur",
+    public static final RegistryEntry<ArmorMaterial> FUR_ARMOR_MATERIAL = registerArmorMaterial("goat_fur",
             () -> new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
                 map.put(ArmorItem.Type.BOOTS, 2);
                 map.put(ArmorItem.Type.LEGGINGS, 4);
                 map.put(ArmorItem.Type.CHESTPLATE, 6);
                 map.put(ArmorItem.Type.HELMET, 2);
                 map.put(ArmorItem.Type.BODY, 4);
-            }), 20, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, () -> Ingredient.ofItems(ModItems.GOAT_FUR),
+            }), 20, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, () -> Ingredient.ofItems(ModItems.GOAT_FUR),
                     List.of(new ArmorMaterial.Layer(Identifier.of(PermaFrostPeaks.MOD_ID, "goat_fur"))), 0,0));
 
 

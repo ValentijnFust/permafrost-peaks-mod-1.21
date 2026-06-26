@@ -79,10 +79,10 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.GREEN_CRYSTAL_DUST, Models.GENERATED);
 
         //Armor
-        itemModelGenerator.registerArmor(((ArmorItem) ModItems.PINK_GARNET_HELMET));
-        itemModelGenerator.registerArmor(((ArmorItem) ModItems.PINK_GARNET_CHESTPLATE));
-        itemModelGenerator.registerArmor(((ArmorItem) ModItems.PINK_GARNET_LEGGINGS));
-        itemModelGenerator.registerArmor(((ArmorItem) ModItems.PINK_GARNET_BOOTS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.FUR_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.FUR_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.FUR_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.FUR_BOOTS));
 
         //Trees
         itemModelGenerator.register(ModBlocks.DRIFTWOOD_SAPLING.asItem(), Models.GENERATED);

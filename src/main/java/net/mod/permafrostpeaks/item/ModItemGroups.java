@@ -44,10 +44,10 @@ public class ModItemGroups {
                         entries.add(ModBlocks.YELLOW_CRYSTAL_BLOCK);
 
                         //Armor
-                        entries.add(ModItems.PINK_GARNET_HELMET);
-                        entries.add(ModItems.PINK_GARNET_CHESTPLATE);
-                        entries.add(ModItems.PINK_GARNET_LEGGINGS);
-                        entries.add(ModItems.PINK_GARNET_BOOTS);
+                        entries.add(ModItems.FUR_HELMET);
+                        entries.add(ModItems.FUR_CHESTPLATE);
+                        entries.add(ModItems.FUR_LEGGINGS);
+                        entries.add(ModItems.FUR_BOOTS);
 
                         //Trees
                         entries.add(ModBlocks.DRIFTWOOD_LOG);
