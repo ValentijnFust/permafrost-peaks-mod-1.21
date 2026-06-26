@@ -10,10 +10,15 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class CrystalCrusherScreen extends HandledScreen<CrystalCrusherScreenHandler> {
+
     private static final Identifier GUI_TEXTURE =
             Identifier.of(PermaFrostPeaks.MOD_ID, "textures/gui/crystal_crusher/crystal_crusher_gui.png");
-    private static final Identifier ARROW_TEXTURE =
-            Identifier.of(PermaFrostPeaks.MOD_ID, "textures/gui/arrow_progress.png");
+
+    private static final Identifier CRUSHING_WHEEL_TEXTURE =
+            Identifier.of(PermaFrostPeaks.MOD_ID, "textures/gui/crushing_wheel_progress.png");
+
+    private static final Identifier LIT_PROGRESS =
+            Identifier.of(PermaFrostPeaks.MOD_ID, "textures/gui/lit_progress.png");
 
     public CrystalCrusherScreen(CrystalCrusherScreenHandler handler, PlayerInventory inventory, Text title) {
         super(handler, inventory, title);
@@ -30,13 +35,40 @@ public class CrystalCrusherScreen extends HandledScreen<CrystalCrusherScreenHand
 
         context.drawTexture(GUI_TEXTURE, x, y, 0, 0, backgroundWidth, backgroundHeight);
 
-        renderProgressArrow(context, x, y);
+        renderFuel(context, x, y);
+        renderProgressCrushingWheels(context, x, y);
     }
 
-    private void renderProgressArrow(DrawContext context, int x, int y) {
-        if(handler.isCrafting()) {
-            context.drawTexture(ARROW_TEXTURE, x + 73, y + 35, 0, 0,
-                    handler.getScaledArrowProgress(), 16, 24, 16);
+    private void renderProgressCrushingWheels(DrawContext context, int x, int y) {
+        if (handler.isCrafting()) {
+            int progress = handler.getScaledCrushingWheelsProgress(); // 0–17
+
+            context.drawTexture(
+                    CRUSHING_WHEEL_TEXTURE,
+                    x + 93,
+                    y + 31,
+                    0,
+                    0,
+                    38,
+                    progress,
+                    38,
+                    17
+            );
+        }
+    }
+
+
+    private void renderFuel(DrawContext context, int x, int y) {
+        if (handler.isBurning()) {
+            int scaled = handler.getScaledFuelProgress();
+
+            context.drawTexture(
+                    LIT_PROGRESS,
+                    x + 55, y + 38 - scaled,
+                    0, 14 - scaled,
+                    14, scaled,
+                    14, 14
+            );
         }
     }
 

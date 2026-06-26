@@ -14,55 +14,95 @@ import net.minecraft.screen.slot.Slot;
 import net.minecraft.util.math.BlockPos;
 
 public class CrystalCrusherScreenHandler extends ScreenHandler {
+
     private final Inventory inventory;
     private final PropertyDelegate propertyDelegate;
     public final CrystalCrusherBlockEntity blockEntity;
 
+    // Client constructor
     public CrystalCrusherScreenHandler(int syncId, PlayerInventory inventory, BlockPos pos) {
-        this(syncId, inventory, inventory.player.getWorld().getBlockEntity(pos), new ArrayPropertyDelegate(2));
+        this(syncId, inventory,
+                inventory.player.getWorld().getBlockEntity(pos),
+                new ArrayPropertyDelegate(4));
     }
 
+    // Server constructor
     public CrystalCrusherScreenHandler(int syncId, PlayerInventory playerInventory,
-                                      BlockEntity blockEntity, PropertyDelegate arrayPropertyDelegate) {
+                                       BlockEntity blockEntity, PropertyDelegate delegate) {
+
         super(ModScreenHandlers.CRYSTAL_CRUSHER_SCREEN_HANDLER, syncId);
-        this.inventory = ((Inventory) blockEntity);
-        this.blockEntity = ((CrystalCrusherBlockEntity) blockEntity);
-        this.propertyDelegate = arrayPropertyDelegate;
 
-        this.addSlot(new Slot(inventory, 0, 54, 34));
-        this.addSlot(new Slot(inventory, 1, 104, 34));
+        this.inventory = (Inventory) blockEntity;
+        this.blockEntity = (CrystalCrusherBlockEntity) blockEntity;
+        this.propertyDelegate = delegate;
 
+
+        // Input
+        this.addSlot(new Slot(inventory, 0, 104, 10));
+
+        // Fuel
+        this.addSlot(new Slot(inventory, 1, 55, 41));
+
+        // Output
+        this.addSlot(new Slot(inventory, 2, 104, 53));
+
+        // Player inventory
         addPlayerInventory(playerInventory);
         addPlayerHotbar(playerInventory);
 
-        addProperties(arrayPropertyDelegate);
+        addProperties(delegate);
     }
+
 
     public boolean isCrafting() {
         return propertyDelegate.get(0) > 0;
     }
 
-    public int getScaledArrowProgress() {
-        int progress = this.propertyDelegate.get(0);
-        int maxProgress = this.propertyDelegate.get(1); // Max Progress
-        int arrowPixelSize = 24; // This is the width in pixels of your arrow
+    public int getScaledCrushingWheelsProgress() {
+        int progress = propertyDelegate.get(0);
+        int maxProgress = propertyDelegate.get(1);
+        int size = 17;
 
-        return maxProgress != 0 && progress != 0 ? progress * arrowPixelSize / maxProgress : 0;
+        return maxProgress != 0 && progress != 0
+                ? progress * size / maxProgress
+                : 0;
     }
+
+    public boolean isBurning() {
+        return propertyDelegate.get(2) > 0;
+    }
+
+    public int getScaledFuelProgress() {
+        int burnTime = propertyDelegate.get(2);
+        int maxBurnTime = propertyDelegate.get(3);
+
+        int height = 14;
+
+        return maxBurnTime != 0 && burnTime != 0
+                ? burnTime * height / maxBurnTime
+                : 0;
+    }
+
 
     @Override
     public ItemStack quickMove(PlayerEntity player, int invSlot) {
         ItemStack newStack = ItemStack.EMPTY;
         Slot slot = this.slots.get(invSlot);
+
         if (slot != null && slot.hasStack()) {
             ItemStack originalStack = slot.getStack();
             newStack = originalStack.copy();
-            if (invSlot < this.inventory.size()) {
-                if (!this.insertItem(originalStack, this.inventory.size(), this.slots.size(), true)) {
+
+            int machineSize = 3;
+
+            if (invSlot < machineSize) {
+                if (!this.insertItem(originalStack, machineSize, this.slots.size(), true)) {
                     return ItemStack.EMPTY;
                 }
-            } else if (!this.insertItem(originalStack, 0, this.inventory.size(), false)) {
-                return ItemStack.EMPTY;
+            } else {
+                if (!this.insertItem(originalStack, 0, machineSize, false)) {
+                    return ItemStack.EMPTY;
+                }
             }
 
             if (originalStack.isEmpty()) {
@@ -71,6 +111,7 @@ public class CrystalCrusherScreenHandler extends ScreenHandler {
                 slot.markDirty();
             }
         }
+
         return newStack;
     }
 
@@ -78,6 +119,10 @@ public class CrystalCrusherScreenHandler extends ScreenHandler {
     public boolean canUse(PlayerEntity player) {
         return this.inventory.canPlayerUse(player);
     }
+
+    // -----------------------
+    // PLAYER INVENTORY UI
+    // -----------------------
 
     private void addPlayerInventory(PlayerInventory playerInventory) {
         for (int i = 0; i < 3; ++i) {
