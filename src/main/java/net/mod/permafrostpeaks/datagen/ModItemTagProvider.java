@@ -8,7 +8,6 @@ import net.mod.permafrostpeaks.util.ModTags;
 import net.minecraft.item.Items;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -40,10 +39,10 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
         //Armor
         getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
-                .add(ModItems.PINK_GARNET_HELMET)
-                .add(ModItems.PINK_GARNET_CHESTPLATE)
-                .add(ModItems.PINK_GARNET_LEGGINGS)
-                .add(ModItems.PINK_GARNET_BOOTS);
+                .add(ModItems.FUR_HELMET)
+                .add(ModItems.FUR_CHESTPLATE)
+                .add(ModItems.FUR_LEGGINGS)
+                .add(ModItems.FUR_BOOTS);
 
         //Trees
         getOrCreateTagBuilder(ItemTags.LOGS_THAT_BURN)

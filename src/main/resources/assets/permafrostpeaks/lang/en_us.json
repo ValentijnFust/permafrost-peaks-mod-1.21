@@ -1,9 +1,5 @@
 {
   "//": "Items",
-  "item.permafrostpeaks.pink_garnet": "Pink Garnet",
-  "item.permafrostpeaks.red_garnet": "Red Garnet",
-  "item.permafrostpeaks.antonio_liberto": "Antonio Liberto",
-
   "item.permafrostpeaks.goat_fur": "Goat Fur",
 
   "item.permafrostpeaks.blue_crystal_shard": "Blue Crystal Shard",
@@ -19,25 +15,19 @@
   "item.permafrostpeaks.mantis_spawn_egg": "Troll Spawn Egg",
 
   "//": "Blocks",
-  "block.permafrostpeaks.pink_garnet_block": "Pink Garnet Block",
-  "block.permafrostpeaks.antonio_liberto_block": "Antonio Liberto Squared",
   "block.permafrostpeaks.green_crystal_block": "Green Crystal Block",
   "block.permafrostpeaks.blue_crystal_block": "Blue Crystal Block",
   "block.permafrostpeaks.red_crystal_block": "Red Crystal Block",
   "block.permafrostpeaks.yellow_crystal_block": "Yellow Crystal Block",
-  "block.permafrostpeaks.testing_block": "Testing Block",
-  "block.permafrostpeaks.pink_garnet_end_ore": "Pink Garnet End Ore",
-  "block.permafrostpeaks.pink_garnet_nether_ore": "Pink Garnet Nether Ore",
-
 
   "//": "Item Groups",
   "itemgroup.permafrostpeaks.permafrost_peaks": "PermaFrost Peaks",
 
   "//": "Armor",
-  "item.permafrostpeaks.pink_garnet_helmet": "Fur Helmet",
-  "item.permafrostpeaks.pink_garnet_chestplate": "Fur Chestplate",
-  "item.permafrostpeaks.pink_garnet_leggings": "Fur Leggings",
-  "item.permafrostpeaks.pink_garnet_boots": "Fur Boots",
+  "item.permafrostpeaks.fur_helmet": "Fur Helmet",
+  "item.permafrostpeaks.fur_chestplate": "Fur Chestplate",
+  "item.permafrostpeaks.fur_leggings": "Fur Leggings",
+  "item.permafrostpeaks.fur_boots": "Fur Boots",
 
   "//": "Entities",
   "entity.permafrostpeaks.mantis": "Troll",
