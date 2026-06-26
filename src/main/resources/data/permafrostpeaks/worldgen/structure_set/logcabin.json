@@ -1,14 +1,14 @@
 {
   "structures": [
     {
-      "structure": "permafrostpeaks:kaupen_house",
+      "structure": "permafrostpeaks:logcabin",
       "weight": 1
     }
   ],
   "placement": {
     "type": "minecraft:random_spread",
-    "spacing": 4000,
-    "separation": 100,
-    "salt": 556847
+    "spacing": 50,
+    "separation": 10,
+    "salt": 923482
   }
 }
