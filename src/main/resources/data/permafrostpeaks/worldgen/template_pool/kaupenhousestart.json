@@ -1,0 +1,21 @@
+{
+  "name": "permafrostpeaks:kaupenhousestart",
+
+  "fallback": "minecraft:empty",
+
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+
+       "location": "permafrostpeaks:cross.nbt",
+
+       "processors": "minecraft:empty",
+
+        "projection": "rigid",
+
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

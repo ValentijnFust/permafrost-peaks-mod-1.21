@@ -1,0 +1,16 @@
+{
+  "structures": [
+    {
+      "structure": "permafrostpeaks:kaupen_house",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 4,
+    "separation": 1,
+    "salt": 55555555,
+    "frequency_reduction_method": "default",
+    "frequency": 1
+  }
+}
