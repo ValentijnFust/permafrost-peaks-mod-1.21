@@ -6,7 +6,8 @@
 
   "biomes":[
     "minecraft:snowy_slopes",
-    "minecraft:grove",
+    "minecraft:old_growth_spruce_taiga",
+    "minecraft:snowy_plains",
     "minecraft:jagged_peaks"
   ],
 
@@ -14,7 +15,7 @@
   "terrain_adaptation": "beard_thin",
 
   "start_height": {
-    "absolute": -34
+    "absolute": -36
   },
 
     "project_start_to_heightmap": "WORLD_SURFACE_WG",
