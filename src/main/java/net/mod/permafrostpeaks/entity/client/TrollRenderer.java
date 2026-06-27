@@ -1,25 +1,25 @@
 package net.mod.permafrostpeaks.entity.client;
 
 import net.mod.permafrostpeaks.PermaFrostPeaks;
-import net.mod.permafrostpeaks.entity.custom.MantisEntity;
+import net.mod.permafrostpeaks.entity.custom.TrollEntity;
 import net.minecraft.client.render.VertexConsumerProvider;
 import net.minecraft.client.render.entity.EntityRendererFactory;
 import net.minecraft.client.render.entity.MobEntityRenderer;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.Identifier;
 
-public class MantisRenderer extends MobEntityRenderer<MantisEntity, MantisModel<MantisEntity>> {
-    public MantisRenderer(EntityRendererFactory.Context context) {
-        super(context, new MantisModel<>(context.getPart(MantisModel.MANTIS)), 0.75f);
+public class TrollRenderer extends MobEntityRenderer<TrollEntity, TrollModel<TrollEntity>> {
+    public TrollRenderer(EntityRendererFactory.Context context) {
+        super(context, new TrollModel<>(context.getPart(TrollModel.TROLL)), 0.75f);
     }
 
     @Override
-    public Identifier getTexture(MantisEntity entity) {
-        return Identifier.of(PermaFrostPeaks.MOD_ID, "textures/entity/mantis/mantis.png");
+    public Identifier getTexture(TrollEntity entity) {
+        return Identifier.of(PermaFrostPeaks.MOD_ID, "textures/entity/troll/troll.png");
     }
 
     @Override
-    public void render(MantisEntity livingEntity, float f, float g, MatrixStack matrixStack,
+    public void render(TrollEntity livingEntity, float f, float g, MatrixStack matrixStack,
                        VertexConsumerProvider vertexConsumerProvider, int i) {
         if(livingEntity.isBaby()) {
             matrixStack.scale(0.8f, 0.8f, 0.8f);

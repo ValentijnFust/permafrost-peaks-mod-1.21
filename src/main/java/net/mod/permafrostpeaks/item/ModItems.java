@@ -55,8 +55,8 @@ public class ModItems {
             new ArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
                     .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(15))));
 
-    public static final Item MANTIS_SPAWN_EGG = registerItem("mantis_spawn_egg",
-            new SpawnEggItem(ModEntities.MANTIS, 0x9dc783, 0xbfaf5f, new Item.Settings()));
+    public static final Item TROLL_SPAWN_EGG = registerItem("troll_spawn_egg",
+            new SpawnEggItem(ModEntities.TROLL, 0x9dc783, 0xbfaf5f, new Item.Settings()));
 
 
     private static Item registerItem(String name, Item item) {

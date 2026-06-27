@@ -15,14 +15,13 @@ import net.minecraft.recipe.Ingredient;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.world.World;
 import net.mod.permafrostpeaks.entity.ModEntities;
-import net.mod.permafrostpeaks.item.ModItems;
 import org.jetbrains.annotations.Nullable;
 
-public class MantisEntity extends AnimalEntity {
+public class TrollEntity extends AnimalEntity {
     public final AnimationState idleAnimationState = new AnimationState();
     private int idleAnimationTimeout = 0;
 
-    public MantisEntity(EntityType<? extends AnimalEntity> entityType, World world) {
+    public TrollEntity(EntityType<? extends AnimalEntity> entityType, World world) {
         super(entityType, world);
     }
 
@@ -44,7 +43,7 @@ public class MantisEntity extends AnimalEntity {
     public static DefaultAttributeContainer.Builder createAttributes() {
         return MobEntity.createMobAttributes()
                 .add(EntityAttributes.GENERIC_MAX_HEALTH, 18)
-                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.05)
+                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.25)
                 .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 9)
                 .add(EntityAttributes.GENERIC_FOLLOW_RANGE, 20);
     }
@@ -63,6 +62,6 @@ public class MantisEntity extends AnimalEntity {
 
     @Override
     public @Nullable PassiveEntity createChild(ServerWorld world, PassiveEntity entity) {
-        return ModEntities.MANTIS.create(world);
+        return ModEntities.TROLL.create(world);
     }
 }

@@ -8,10 +8,10 @@ import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.MathHelper;
 import net.mod.permafrostpeaks.PermaFrostPeaks;
-import net.mod.permafrostpeaks.entity.custom.MantisEntity;
+import net.mod.permafrostpeaks.entity.custom.TrollEntity;
 
-public class MantisModel<T extends MantisEntity> extends SinglePartEntityModel<T> {
-    public static final EntityModelLayer MANTIS = new EntityModelLayer(Identifier.of(PermaFrostPeaks.MOD_ID, "mantis"), "main");
+public class TrollModel<T extends TrollEntity> extends SinglePartEntityModel<T> {
+    public static final EntityModelLayer TROLL = new EntityModelLayer(Identifier.of(PermaFrostPeaks.MOD_ID, "troll"), "main");
     private final ModelPart root;
     private final ModelPart head;
     private final ModelPart troll;
@@ -25,7 +25,7 @@ public class MantisModel<T extends MantisEntity> extends SinglePartEntityModel<T
     private final ModelPart legs;
     private final ModelPart leftleg;
     private final ModelPart rightleg;
-    public MantisModel(ModelPart root) {
+    public TrollModel(ModelPart root) {
         this.root = root.getChild("root");
         this.troll = this.root.getChild("troll");
         this.torso = this.troll.getChild("torso");
@@ -68,14 +68,14 @@ public class MantisModel<T extends MantisEntity> extends SinglePartEntityModel<T
         ModelPartData ears = head.addChild("ears", ModelPartBuilder.create(), ModelTransform.pivot(-1.0F, 13.0F, 1.0F));
 
         ModelPartData leftear = ears.addChild("leftear", ModelPartBuilder.create().uv(35, 2).cuboid(-3.0F, -15.0F, -2.0F, 1.0F, 3.0F, 0.0F, new Dilation(0.0F))
-                .uv(35, 2).cuboid(-5.0F, -15.0F, -2.0F, 1.0F, 1.0F, 0.0F, new Dilation(0.0F))
-                .uv(35, 2).cuboid(-2.0F, -14.0F, -2.0F, 1.0F, 2.0F, 0.0F, new Dilation(0.0F))
-                .uv(35, 2).cuboid(-4.0F, -15.0F, -2.0F, 1.0F, 2.0F, 0.0F, new Dilation(0.0F)), ModelTransform.pivot(0.0F, 0.0F, 1.0F));
+                .uv(35, 2).cuboid(-5.0F, -15.0F, -2.0F, 1.0F, 1.0F, 0.1F, new Dilation(0.0F))
+                .uv(35, 2).cuboid(-2.0F, -14.0F, -2.0F, 1.0F, 2.0F, 0.1F, new Dilation(0.0F))
+                .uv(35, 2).cuboid(-4.0F, -15.0F, -2.0F, 1.0F, 2.0F, 0.1F, new Dilation(0.0F)), ModelTransform.pivot(0.0F, 0.0F, 1.0F));
 
         ModelPartData rightear = ears.addChild("rightear", ModelPartBuilder.create().uv(35, 2).cuboid(3.0F, -15.0F, -2.0F, 1.0F, 3.0F, 0.0F, new Dilation(0.0F))
-                .uv(35, 2).cuboid(5.0F, -15.0F, -2.0F, 1.0F, 1.0F, 0.0F, new Dilation(0.0F))
-                .uv(35, 2).cuboid(2.0F, -14.0F, -2.0F, 1.0F, 2.0F, 0.0F, new Dilation(0.0F))
-                .uv(35, 2).cuboid(4.0F, -15.0F, -2.0F, 1.0F, 2.0F, 0.0F, new Dilation(0.0F)), ModelTransform.pivot(0.0F, 0.0F, 1.0F));
+                .uv(35, 2).cuboid(5.0F, -15.0F, -2.0F, 1.0F, 1.0F, 0.1F, new Dilation(0.0F))
+                .uv(35, 2).cuboid(2.0F, -14.0F, -2.0F, 1.0F, 2.0F, 0.1F, new Dilation(0.0F))
+                .uv(35, 2).cuboid(4.0F, -15.0F, -2.0F, 1.0F, 2.0F, 0.1F, new Dilation(0.0F)), ModelTransform.pivot(0.0F, 0.0F, 1.0F));
 
         ModelPartData legs = troll.addChild("legs", ModelPartBuilder.create(), ModelTransform.pivot(4.0F, 2.0F, 0.0F));
 
@@ -88,12 +88,12 @@ public class MantisModel<T extends MantisEntity> extends SinglePartEntityModel<T
     }
 
     @Override
-    public void setAngles(MantisEntity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
+    public void setAngles(TrollEntity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
         this.getPart().traverse().forEach(ModelPart::resetTransform);
         this.setHeadAngles(netHeadYaw, headPitch);
 
-        this.animateMovement(MantisAnimations.ANIM_TROLL_WALK, limbSwing, limbSwingAmount, 2f, 2.5f);
-        this.updateAnimation(entity.idleAnimationState, MantisAnimations.ANIM_TROLL_IDLE, ageInTicks, 1f);
+        this.animateMovement(TrollAnimations.ANIM_TROLL_WALK, limbSwing, limbSwingAmount, 2f, 2.5f);
+        this.updateAnimation(entity.idleAnimationState, TrollAnimations.ANIM_TROLL_IDLE, ageInTicks, 1f);
     }
 
     private void setHeadAngles(float headYaw, float headPitch) {
@@ -101,7 +101,7 @@ public class MantisModel<T extends MantisEntity> extends SinglePartEntityModel<T
         headPitch = MathHelper.clamp(headPitch, -25.0F, 45.0F);
 // -30 30 -25 45
         this.head.yaw = headYaw * 0.017453292F;
-        this.head.pitch = headPitch * 1.017453292F;
+        this.head.pitch = headPitch * 0.017453292F;
     }
 
     @Override

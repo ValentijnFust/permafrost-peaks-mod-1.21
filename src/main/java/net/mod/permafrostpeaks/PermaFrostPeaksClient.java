@@ -8,8 +8,8 @@ import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.client.render.RenderLayer;
 import net.mod.permafrostpeaks.block.ModBlocks;
 import net.mod.permafrostpeaks.entity.ModEntities;
-import net.mod.permafrostpeaks.entity.client.MantisModel;
-import net.mod.permafrostpeaks.entity.client.MantisRenderer;
+import net.mod.permafrostpeaks.entity.client.TrollModel;
+import net.mod.permafrostpeaks.entity.client.TrollRenderer;
 import net.mod.permafrostpeaks.screen.ModScreenHandlers;
 import net.mod.permafrostpeaks.screen.custom.CrystalCrusherScreen;
 
@@ -34,7 +34,7 @@ public class PermaFrostPeaksClient implements ClientModInitializer {
         HandledScreens.register(ModScreenHandlers.CRYSTAL_CRUSHER_SCREEN_HANDLER, CrystalCrusherScreen::new);
 
         //Entity Rendering
-        EntityModelLayerRegistry.registerModelLayer(MantisModel.MANTIS, MantisModel::getTexturedModelData);
-        EntityRendererRegistry.register(ModEntities.MANTIS, MantisRenderer::new);
+        EntityModelLayerRegistry.registerModelLayer(TrollModel.TROLL, TrollModel::getTexturedModelData);
+        EntityRendererRegistry.register(ModEntities.TROLL, TrollRenderer::new);
     }
 }

@@ -11,7 +11,7 @@ import net.minecraft.util.Identifier;
 import net.mod.permafrostpeaks.block.ModBlocks;
 import net.mod.permafrostpeaks.block.entity.ModBlockEntities;
 import net.mod.permafrostpeaks.entity.ModEntities;
-import net.mod.permafrostpeaks.entity.custom.MantisEntity;
+import net.mod.permafrostpeaks.entity.custom.TrollEntity;
 import net.mod.permafrostpeaks.item.ModItemGroups;
 import net.mod.permafrostpeaks.item.ModItems;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -54,7 +54,7 @@ public class PermaFrostPeaks implements ModInitializer {
 
         //Entities
         ModEntities.registerModEntities();
-        FabricDefaultAttributeRegistry.register(ModEntities.MANTIS, MantisEntity.createAttributes());
+        FabricDefaultAttributeRegistry.register(ModEntities.TROLL, TrollEntity.createAttributes());
 
         //Block Entities
         ModBlockEntities.registerBlockEntities();
