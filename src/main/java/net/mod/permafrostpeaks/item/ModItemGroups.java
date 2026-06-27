@@ -35,7 +35,7 @@ public class ModItemGroups {
                         entries.add(ModItems.GREEN_CRYSTAL_DUST);
 
                         //Spawn Eggs
-                        entries.add(ModItems.TROLL_SPAWN_EGG);
+                        entries.add(ModItems.MANTIS_SPAWN_EGG);
 
                         //Blocks
                         entries.add(ModBlocks.BLUE_CRYSTAL_BLOCK);

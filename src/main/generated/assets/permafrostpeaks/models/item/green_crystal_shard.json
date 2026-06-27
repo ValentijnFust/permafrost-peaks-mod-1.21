@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "permafrostpeaks:item/green_crystal_shard"
-  }
-}

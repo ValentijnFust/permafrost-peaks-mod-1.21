@@ -8,7 +8,6 @@ import net.mod.permafrostpeaks.util.ModTags;
 import net.minecraft.item.Items;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -33,22 +32,19 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.YELLOW_CRYSTAL_DUST)
                 .add(ModItems.GREEN_CRYSTAL_DUST)
 
-                //Testing Items
-                .add(ModItems.PINK_GARNET)
-                .add(ModItems.RED_GARNET)
-                .add(ModItems.ANTONIO_LIBERTO)
-
                 //Original Items
                 .add(Items.COAL)
                 .add(Items.STICK)
                 .add(Items.APPLE);
 
+        //Armor
         getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
-                .add(ModItems.PINK_GARNET_HELMET)
-                .add(ModItems.PINK_GARNET_CHESTPLATE)
-                .add(ModItems.PINK_GARNET_LEGGINGS)
-                .add(ModItems.PINK_GARNET_BOOTS);
+                .add(ModItems.FUR_HELMET)
+                .add(ModItems.FUR_CHESTPLATE)
+                .add(ModItems.FUR_LEGGINGS)
+                .add(ModItems.FUR_BOOTS);
 
+        //Trees
         getOrCreateTagBuilder(ItemTags.LOGS_THAT_BURN)
                 .add(ModBlocks.DRIFTWOOD_LOG.asItem())
                 .add(ModBlocks.DRIFTWOOD_WOOD.asItem())
