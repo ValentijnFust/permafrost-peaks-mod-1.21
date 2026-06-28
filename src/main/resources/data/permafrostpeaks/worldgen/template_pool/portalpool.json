@@ -1,0 +1,34 @@
+{
+  "name": "permafrostpeaks:portalstart",
+
+  "fallback": "minecraft:empty",
+
+  "elements": [
+    {
+      "weight": 15,
+      "element": {
+
+       "location": "permafrostpeaks:portal",
+
+       "processors": "minecraft:empty",
+
+        "projection": "rigid",
+
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+
+        "location": "permafrostpeaks:blueportalhouse",
+
+        "processors": "minecraft:empty",
+
+        "projection": "rigid",
+
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}
