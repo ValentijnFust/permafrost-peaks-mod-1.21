@@ -36,7 +36,7 @@ public class ModBiomes {
         return OverworldBiomeCreator.createOldGrowthTaiga(
                 context.getRegistryLookup(RegistryKeys.PLACED_FEATURE),
                 context.getRegistryLookup(RegistryKeys.CONFIGURED_CARVER),
-                false // Snowy
+                true // No clue why this here but it needed (should make stuff snowy, but it don't)
         );
     }
 
