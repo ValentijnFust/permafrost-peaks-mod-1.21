@@ -35,7 +35,7 @@ public class ModItemGroups {
                         entries.add(ModItems.GREEN_CRYSTAL_DUST);
 
                         //Spawn Eggs
-
+                        entries.add(ModItems.TROLL_SPAWN_EGG);
 
                         //Blocks
                         entries.add(ModBlocks.BLUE_CRYSTAL_BLOCK);
@@ -43,13 +43,11 @@ public class ModItemGroups {
                         entries.add(ModBlocks.GREEN_CRYSTAL_BLOCK);
                         entries.add(ModBlocks.YELLOW_CRYSTAL_BLOCK);
 
-                        //Testing Items
-
-                        //Testing Blocks
-
-
                         //Armor
-
+                        entries.add(ModItems.FUR_BOOTS);
+                        entries.add(ModItems.FUR_HELMET);
+                        entries.add(ModItems.FUR_CHESTPLATE);
+                        entries.add(ModItems.FUR_LEGGINGS);
 
                         //Trees
                         entries.add(ModBlocks.DRIFTWOOD_LOG);

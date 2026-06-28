@@ -51,7 +51,6 @@ public class PermaFrostPeaks implements ModInitializer {
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DRIFTWOOD_PLANKS, 5, 20);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DRIFTWOOD_LEAVES, 30, 60);
 
-
         //Entities
         ModEntities.registerModEntities();
         FabricDefaultAttributeRegistry.register(ModEntities.TROLL, TrollEntity.createAttributes());
@@ -62,10 +61,32 @@ public class PermaFrostPeaks implements ModInitializer {
 
         //Dimension
         CustomPortalBuilder.beginPortal()
+                .frameBlock(ModBlocks.GREEN_CRYSTAL_BLOCK)
+                .lightWithItem(ModItems.GREEN_CRYSTAL_SHARD)
+                .destDimID(Identifier.of(PermaFrostPeaks.MOD_ID, "permafrostpeaks"))
+                .tintColor(2, 133, 0)
+                .registerPortal();
+
+        CustomPortalBuilder.beginPortal()
                 .frameBlock(ModBlocks.BLUE_CRYSTAL_BLOCK)
                 .lightWithItem(ModItems.BLUE_CRYSTAL_SHARD)
                 .destDimID(Identifier.of(PermaFrostPeaks.MOD_ID, "permafrostpeaks"))
-                .tintColor(0xc76efa)
+                .tintColor(27, 24, 153)
                 .registerPortal();
+
+        CustomPortalBuilder.beginPortal()
+                .frameBlock(ModBlocks.RED_CRYSTAL_BLOCK)
+                .lightWithItem(ModItems.RED_CRYSTAL_SHARD)
+                .destDimID(Identifier.of(PermaFrostPeaks.MOD_ID, "permafrostpeaks"))
+                .tintColor(181, 0, 0)
+                .registerPortal();
+
+        CustomPortalBuilder.beginPortal()
+                .frameBlock(ModBlocks.YELLOW_CRYSTAL_BLOCK)
+                .lightWithItem(ModItems.YELLOW_CRYSTAL_SHARD)
+                .destDimID(Identifier.of(PermaFrostPeaks.MOD_ID, "permafrostpeaks"))
+                .tintColor(232, 209, 0)
+                .registerPortal();
+
     }
 }
