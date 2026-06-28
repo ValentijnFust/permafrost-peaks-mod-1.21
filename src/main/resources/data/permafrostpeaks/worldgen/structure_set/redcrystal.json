@@ -1,0 +1,16 @@
+{
+  "structures": [
+    {
+      "structure": "permafrostpeaks:redcrystal",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 1,
+    "separation": 0,
+    "salt": 378944,
+    "frequency": 0.7,
+    "frequency_reduction_method":"default"
+  }
+}

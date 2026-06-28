@@ -1,0 +1,60 @@
+{
+  "name": "permafrostpeaks:greencrystal",
+
+  "fallback": "minecraft:empty",
+
+  "elements": [
+    {
+      "weight": 25,
+      "element": {
+
+        "location": "permafrostpeaks:blue2",
+
+        "processors": "minecraft:empty",
+
+        "projection": "rigid",
+
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 30,
+      "element": {
+
+        "location": "permafrostpeaks:blue3",
+
+        "processors": "minecraft:empty",
+
+        "projection": "rigid",
+
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 20,
+      "element": {
+
+        "location": "permafrostpeaks:blue6",
+
+        "processors": "minecraft:empty",
+
+        "projection": "rigid",
+
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 20,
+      "element": {
+
+        "location": "permafrostpeaks:blue7",
+
+        "processors": "minecraft:empty",
+
+        "projection": "rigid",
+
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

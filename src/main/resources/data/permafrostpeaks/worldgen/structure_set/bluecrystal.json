@@ -1,0 +1,20 @@
+{
+  "structures": [
+    {
+      "structure": "permafrostpeaks:bluecrystalun",
+      "weight": 5
+    },
+    {
+      "structure": "permafrostpeaks:bluecrystalab",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 2,
+    "separation": 0,
+    "salt": 358930,
+    "frequency": 0.8,
+    "frequency_reduction_method":"default"
+  }
+}
