@@ -5,11 +5,8 @@
   "max_distance_from_center": 80,
 
   "biomes":[
-    "minecraft:jagged_peaks",
-    "minecraft:frozen_peaks",
-    "minecraft:snowy_plains",
-    "minecraft:grove",
-    "minecraft:snowy_slopes"
+    "permafrostpeaks:permafrost_peaks",
+    "permafrostpeaks:permafrost_spruce_taiga"
   ],
 
   "step": "underground_structures",
@@ -21,7 +18,7 @@
       "absolute": 0
     },
     "max_inclusive": {
-      "absolute": 40
+      "absolute": 150
     }
   },
 

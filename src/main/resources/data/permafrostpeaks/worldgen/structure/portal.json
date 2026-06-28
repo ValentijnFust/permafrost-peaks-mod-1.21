@@ -7,7 +7,8 @@
   "biomes": [
     "minecraft:jagged_peaks",
     "minecraft:frozen_peaks",
-    "minecraft:snowy_slopes"
+    "minecraft:snowy_slopes",
+    "minecraft:grove"
   ],
 
   "step": "surface_structures",
