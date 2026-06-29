@@ -59,6 +59,7 @@ public class ModBiomes {
         DefaultBiomeFeatures.addDefaultOres(generationSettings);
         DefaultBiomeFeatures.addDefaultDisks(generationSettings);
         DefaultBiomeFeatures.addFrozenTopLayer(generationSettings);
+        DefaultBiomeFeatures.addEmeraldOre(generationSettings);
 
         BiomeEffects effects = new BiomeEffects.Builder()
                 .waterColor(3750089)
