@@ -10,7 +10,8 @@
     "minecraft:snowy_slopes",
     "minecraft:grove",
     "minecraft:snowy_plains",
-    "minecraft:snowy_taiga"
+    "minecraft:snowy_taiga",
+    "minecraft:ice_spikes"
   ],
 
   "step": "surface_structures",
