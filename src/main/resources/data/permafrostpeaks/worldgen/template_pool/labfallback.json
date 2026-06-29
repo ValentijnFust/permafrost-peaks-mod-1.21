@@ -1,0 +1,60 @@
+{
+  "name": "permafrostpeaks:labfallback",
+
+  "fallback": "minecraft:empty",
+
+  "elements": [
+    {
+      "weight": 20,
+      "element": {
+
+        "location": "permafrostpeaks:fallbosroom",
+
+        "processors": "minecraft:empty",
+
+        "projection": "rigid",
+
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 30,
+      "element": {
+
+        "location": "permafrostpeaks:fallback_wall",
+
+        "processors": "minecraft:empty",
+
+        "projection": "rigid",
+
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 15,
+      "element": {
+
+        "location": "permafrostpeaks:fallback_storage",
+
+        "processors": "minecraft:empty",
+
+        "projection": "rigid",
+
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 20,
+      "element": {
+
+        "location": "permafrostpeaks:electricfall",
+
+        "processors": "minecraft:empty",
+
+        "projection": "rigid",
+
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}
