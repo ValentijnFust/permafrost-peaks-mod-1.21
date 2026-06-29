@@ -52,7 +52,6 @@ public class ModItems {
     public static final Item TROLL_SPAWN_EGG = registerItem("troll_spawn_egg",
             new SpawnEggItem(ModEntities.TROLL, 0x9dc783, 0xbfaf5f, new Item.Settings()));
 
-
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(PermaFrostPeaks.MOD_ID, name), item);
     }

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:ender_pearl"
+    },
+    {
+      "item": "minecraft:blaze_powder"
+    },
+    {
+      "item": "permafrostpeaks:blue_crystal_dust"
+    },
+    {
+      "item": "permafrostpeaks:red_crystal_dust"
+    },
+    {
+      "item": "permafrostpeaks:green_crystal_dust"
+    },
+    {
+      "item": "permafrostpeaks:yellow_crystal_dust"
+    }
+  ],
+  "result": {
+    "id": "minecraft:ender_eye",
+    "count": 1
+  }
+}
